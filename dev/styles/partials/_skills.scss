@@ -1,0 +1,33 @@
+#skills {
+	background-color: $heroColor;
+	h4, i, span, p {
+		color: $white;
+	}
+}
+
+.skillsItems {
+	display: flex;
+	padding: 2rem 0;
+	.languages, .tools, .learning {
+		// width: 32%;
+		width: 50%;
+		padding: 0 1rem;
+		h4 {
+			text-align: center;
+		}
+	}
+	// .languages, .tools {
+	.languages {
+		border-right: 2px dotted $gold;
+	}
+}
+
+.languagesList, .toolsList, .learningList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	li {
+		width: 33.3%;
+	}
+}

@@ -1,0 +1,22 @@
+#bio .wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 7rem;
+	margin-top: 7rem;
+	.bioText {
+		width: 60%;
+		padding-right: 3rem;
+	}
+	.bioImage {
+		width: 40%;
+		img {
+			border-radius: 50%;
+			border: 2px solid $gold;
+			max-width: 100%;
+		}
+	}
+}
+
+.resume {
+	margin: 2.5rem 0 0 0;
+}

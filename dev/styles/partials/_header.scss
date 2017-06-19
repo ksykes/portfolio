@@ -1,0 +1,12 @@
+header {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background-color: $heroColor;
+	height: 100vh;
+}
+
+header .outerWrapper {
+	text-align: center;
+}

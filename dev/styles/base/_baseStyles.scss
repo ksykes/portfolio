@@ -1,0 +1,22 @@
+body {
+	font-size: 62.5%;
+}
+
+.outerWrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 4rem;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 4rem;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+}

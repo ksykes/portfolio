@@ -1,0 +1,35 @@
+#portfolio {
+	margin: 7rem 0 7rem 0;
+}
+
+.portfolioPiece {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 4rem 0;
+	padding-bottom: 3rem;
+	border-bottom: 2px dotted $gold;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	.portfolioPieceText, .portfolioPieceImage {
+		width: 50%;
+	}
+	.portfolioPieceImage img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.spacingRight {
+		padding-right: 2rem;
+	}
+	.spacingLeft {
+		padding-left: 2rem;
+	}
+	.portfolioPieceText .buttonLink:nth-of-type(1n) {
+		margin-right: 1rem;
+	}
+}
+
+.portfolioTechList {
+	margin-bottom: 2rem;
+}

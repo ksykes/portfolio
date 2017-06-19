@@ -3,153 +3,269 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kait Sykes</title>
+	<title>Kait Sykes | Front-end web developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Lato:400i|Montserrat:400,700" rel="stylesheet">
+	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="/public/styles/style.css">
 </head>
 <body>
 	<header>
-		<div>
-			<h1>Kait Sykes</h1>
+		<div class="outerWrapper">
+			<div class="largeLogo">
+				<h1>Kait Sykes</h1>
+			</div>
+			<!-- <div class="downArrow">
+			</div> -->
 		</div>
 	</header>
 	<div class="wrapper">
 		<nav>
-			<ul>
+			<img src="/assets/logo-gold.png"  />
+			<ul class="navLinks">
 				<li><a href='/'>Home</a></li>
 				<li><a href='#about'>About</a></li>
+				<li><a href='#skills'>Skills</a></li>
 				<li><a href='#portfolio'>Portfolio</a></li>
 				<li><a href='#contact'>Contact</a></li>
 			</ul>
 		</nav>
 	</div>
 
-	<main>
-		<!-- ABOUT -->
-		<section id="bio">
-			<div class="wrapper">
-				<div class="statsBox"></div>
-				<div class="x"></div>
-				<div class="statsBox"></div>
-				<div class="x"></div>
-				<div class="statsBox"></div>
-				<div class="x"></div>
-				<div class="statsBox"></div>
-			</div>
-		</section>
-
-		<!-- SKILLS SECTION...like Instagram images? -->
-		<section id="skills">
-			<div class="wrapper">
-				<div class="skillsItem">
-					<img src="" alt="">
-					<div class="skillLabel">
-						<h4></h4>
+		<main>
+			<!-- ABOUT -->
+			<section id="bio">
+				<div class="wrapper">
+					<div class="bioText">
+						<h3>About Me</h3>
+						<p>Hi! I’m a front-end web developer based in Toronto, ON and a graduate of HackerYou’s Front End Web Development Bootcamp. I love learning so much I also have a B.A. in English Literature and an M.A. in Public Texts. My voracious curiosity has been invaluable as a professional Googler / developer.</p>
+						<p>When I’m not coding, you can find me learning how to knit for the third time, reading the latest fantasy novel, snoozing in the park, making new dog friends, and trying to be in the presence of piney trees as much as possible.</p>
+						<p class="resume"><a href="" class="buttonLinkLarge">Download my resume</a></p>
+					</div>
+					<div class="bioImage">
+						<img src="/assets/ksykes.jpg" alt="Headshot of Kait Sykes">
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- PORTFOLIO -->
-		<section id="portfolio">
-			<div class="wrapper">
-				<!-- PORTFOLIO PIECE 1 -->
-				<div class="portfolioPieceImage"></div>
-				<div class="portfioloPieceText">
-					<h3>Project Title</h3>
-					<p>Need a hostess gift for your next potluck? We've got you covered with selections from the LCBO API. We will even let you know where your nearest LCBO store is located! Project built in conjunction with Jessica Del Grande and Alex Ghattas.</p>
-					<ul class="portfolioTechList">
-						<li>APIs</li>
-						<li>Javascript</li>
-						<li>ES6</li>
-						<li>Git</li>
-						<li>Gulp</li>
-						<li>jQuery</li>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Sass</li>
-					</ul>
-					<h4>View Live</h4>
-					<h4>View Github</h4>
+			<!-- SKILLS -->
+			<section id="skills">
+				<div class="wrapper">
+					<div class="skillsItems">
+						<div class="languages">
+							<h4>Languages</h4>
+							<ul class="languagesList">
+								<li>
+									<i class="devicon-html5-plain-wordmark"></i>
+									<p>HTML5</p>
+								</li>
+								<li>
+									<i class="devicon-css3-plain-wordmark"></i>
+									<p>CSS3</p>
+								</li>
+								<li>
+									<i class="devicon-sass-original"></i>
+									<p>Sass</p>
+								</li>
+								<li>
+									<i class="devicon-javascript-plain"></i>
+									<p>JavaScript</p>
+								</li>
+								<li>
+									<i class="devicon-jquery-plain"></i>
+									<p>jQuery</p>
+								</li>
+								<li>
+									<i class="devicon-react-original"></i>
+									<p>React</p>
+								</li>
+								<li>
+									<span class="devicons devicons-responsive">
+									<p>Responsive Design</p>
+								</li>
+							</ul>
+						</div>
+						<div class="tools">
+							<h4>Tools</h4>
+							<ul class="toolsList">
+								<li>
+									<i class="devicon-gulp-plain"></i>
+									<p>Gulp</p>
+								</li>
+								<li>
+									<i class="devicon-git-plain"></i>
+									<p>Git</p>
+								</li>
+								<li>
+									<i class="devicon-github-plain"></i>
+									<p>Github</p>
+								</li>
+								<li>
+									<span class="devicons devicons-firebase">
+									<p>Firebase</p>
+								</li>
+								<li>
+									<i class="devicon-babel-plain"></i>
+									<p>Babel</p>
+								</li>
+								<li>
+									<i class="devicon-atom-original"></i>
+									<p>Atom</p>
+								</li>
+								<li>
+									<i class="devicon-bootstrap-plain"></i>
+									<p>Bootstrap</p>
+								</li>
+								<li>
+									<span class="devicons devicons-terminal_badge">
+									<p>Terminal</p>
+								</li>
+							</ul>
+						</div>
+						<!-- <div class="learning">
+							<h4>Learning</h4>
+							<ul class="learningList">
+								<li>
+									<i class="devicon-nodejs-plain"></i>
+									<p>Node.js</p>
+								</li>
+								<li>
+									<i class="devicon-wordpress-plain"></i>
+									<p>WordPress</p>
+								</li>
+								<li>
+									<i class="devicon-angularjs-plain"></i>
+									<p>Angular.js</p>
+								</li>
+							</ul>
+						</div> -->
+					</div>
 				</div>
+			</section>
 
-				<!-- PORTFOLIO PIECE 2 -->
-				<div class="portfioloPieceText">
-					<h3>Project Title</h3>
-					<p>Need a hostess gift for your next potluck? We've got you covered with selections from the LCBO API. We will even let you know where your nearest LCBO store is located! Project built in conjunction with Jessica Del Grande and Alex Ghattas.</p>
-					<ul class="portfolioTechList">
-						<li>APIs</li>
-						<li>Javascript</li>
-						<li>ES6</li>
-						<li>Git</li>
-						<li>Gulp</li>
-						<li>jQuery</li>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Sass</li>
-					</ul>
-					<h4>View Live</h4>
-					<h4>View Github</h4>
+			<!-- PORTFOLIO -->
+			<section id="portfolio">
+				<div class="wrapper">
+					<h3>Portfolio</h3>
+					<!-- PORTFOLIO PIECE 1 -->
+					<div class="portfolioPiece">
+						<div class="portfolioPieceImage">
+							<img src="/assets/mockups/laundry-lessons.png" alt="Screenshot of laundry web app" class="spacingRight">
+						</div>
+						<div class="portfolioPieceText">
+							<h4>React Web App</h4>
+							<p>Need help deciphering those weird laundry hieroglyphics on your clothing tags? Not sure what to do with that bacon grease stain on your t-shirt? I've got you covered with an educational laundry app that helps you get your laundry done. I'll even let you know where your nearest laundromat is located!</p>
+							<ul class="portfolioTechList">
+								<li>APIs</li>
+								<li>JavaScript</li>
+								<li>ES6</li>
+								<li>React</li>
+								<li>Git</li>
+								<li>Gulp</li>
+								<li>jQuery</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Sass</li>
+							</ul>
+							<a href="http://kaitsykes.com/laundry-lessons/" class="buttonLink">View Live</a>
+							<a href="https://github.com/ksykes/laundry-app" class="buttonLink">View Github</a>
+						</div>
+					</div>
+
+					<!-- PORTFOLIO PIECE 2 -->
+					<div class="portfolioPiece">
+						<div class="portfolioPieceText">
+							<h4>Responsive PSD Conversion</h4>
+							<p>Created a one page fully responsive site from a pre-conceived Photoshop design. View the PSD <a href="/assets/over-psd.jpg">here</a>.</p>
+							<ul class="portfolioTechList">
+								<li>Responsive Design</li>
+								<li>jQuery</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Sass</li>
+							</ul>
+							<a href="http://kaitsykes.com/over/" class="buttonLink">View Live</a>
+							<a href="https://github.com/ksykes/over" class="buttonLink">View Github</a>
+						</div>
+						<div class="portfolioPieceImage">
+							<img src="/assets/mockups/over.png" alt="Screenshot of responsive PSD to HTML conversion website" class="spacingLeft">
+						</div>
+					</div>
+
+					<!-- PORTFOLIO PIECE 3 -->
+					<div class="portfolioPiece">
+						<div class="portfolioPieceImage">
+							<img src="/assets/mockups/to-memory-flip.png" alt="Screenshot of TO Memory Flip Card Game website" class="spacingRight">
+						</div>
+						<div class="portfolioPieceText">
+							<h4>JavaScript Web App</h4>
+							<p>Does your memory need some work? Try out this fun Toronto-themed flip card game, featured such Toronto characters as trash pandas, the High Park capybara, and Drake. Project built in conjunction with <a href="">Estela Thomson</a>.</p>
+							<ul class="portfolioTechList">
+								<li>Javascript</li>
+								<li>ES6</li>
+								<li>jQuery</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Sass</li>
+								<li>Pair Programming</li>
+							</ul>
+							<a href="http://kaitsykes.com/to-memory-flip/" class="buttonLink">View Live</a>
+							<a href="https://github.com/ksykes/to-memory-flip" class="buttonLink">View Github</a>
+						</div>
+					</div>
+
+					<!-- PORTFOLIO PIECE 4 -->
+					<div class="portfolioPiece">
+						<div class="portfolioPieceText">
+							<h4>Mock Agency API Project</h4>
+							<p>The Beauty Log is a web app that provides a selection of makeup looks and the products used to create them. Add your favourite products to a wishlist and favourite the best looks. Project built in conjunction with <a href="http://irenezou.com">Irene Zou</a>, <a href="http://www.sonnyzhang.ca">Sonny Zhang</a>, and <a href="http://robinwatson.codes">Robin Watson</a>.</p>
+							<ul class="portfolioTechList">
+								<li>APIs</li>
+								<li>Javascript</li>
+								<li>ES6</li>
+								<li>Git</li>
+								<li>Gulp</li>
+								<li>jQuery</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>Sass</li>
+							</ul>
+							<a href="" class="buttonLink">View Live</a>
+							<a href="https://github.com/ksykes/makeup-app" class="buttonLink">View Github</a>
+						</div>
+						<div class="portfolioPieceImage">
+							<img src="/assets/mockups/beauty-bar.png" alt="Screenshot of Beauty Bar web app" class="spacingLeft">
+						</div>
+					</div>
 				</div>
-				<div class="portfolioPieceImage"></div>
+			</section>
 
-				<!-- PORTFOLIO PIECE 3 -->
-				<div class="portfolioPieceImage"></div>
-				<div class="portfioloPieceText">
-					<h3>Project Title</h3>
-					<p>Need a hostess gift for your next potluck? We've got you covered with selections from the LCBO API. We will even let you know where your nearest LCBO store is located! Project built in conjunction with Jessica Del Grande and Alex Ghattas.</p>
-					<ul class="portfolioTechList">
-						<li>APIs</li>
-						<li>Javascript</li>
-						<li>ES6</li>
-						<li>Git</li>
-						<li>Gulp</li>
-						<li>jQuery</li>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Sass</li>
-					</ul>
-					<h4>View Live</h4>
-					<h4>View Github</h4>
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="wrapper">
+					<div class="smallLogo">
+						<h1>Kait Sykes</h1>
+					</div>
+					<h2>Email me: <a href='mailto:kait@kaitsykes.com'>kait@kaitsykes.com</a></h2>
+					<div class="socialLinks">
+						<a href="https://twitter.com/ktsyks" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://medium.com/@ksykes" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+						<a href="https://github.com/ksykes" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="https://codepen.io/ksykes/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/kaitlynsykes/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
 				</div>
+			</section>
 
-				<!-- PORTFOLIO PIECE 4 -->
-				<div class="portfioloPieceText">
-					<h3>Project Title</h3>
-					<p>Need a hostess gift for your next potluck? We've got you covered with selections from the LCBO API. We will even let you know where your nearest LCBO store is located! Project built in conjunction with Jessica Del Grande and Alex Ghattas.</p>
-					<ul class="portfolioTechList">
-						<li>APIs</li>
-						<li>Javascript</li>
-						<li>ES6</li>
-						<li>Git</li>
-						<li>Gulp</li>
-						<li>jQuery</li>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Sass</li>
-					</ul>
-					<h4>View Live</h4>
-					<h4>View Github</h4>
-				</div>
-				<div class="portfolioPieceImage"></div>
-			</div>
-		</section>
+			<footer>
+				<p>Photo credit: <a href="http://pamlau.com/" target="_blank">Pam Lau</a>. © 2017 Kait Sykes. All rights reserved.</p>
+			</footer>
+		</main>
+	</div>
 
-		<!-- CONTACT -->
-		<section id="contact">
-			<div class="wrapper">
-				<div class="logo"></div>
-				<h3><a href='mailto:kait@kaitsykes.com'>kait@kaitsykes.com</a></h3>
-				<div class="socialLinks">
-					<!-- github, linkedin, medium, twitter -->
-				</div>
-			</div>
-		</section>
-
-		<footer>
-			<p>Photo credit: Pam Lau. © 2017 Kait Sykes. All rights reserved.</p>
-		</footer>
-	</main>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/514b8e0366.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>
