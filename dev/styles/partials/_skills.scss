@@ -9,14 +9,12 @@
 	display: flex;
 	padding: 2rem 0;
 	.languages, .tools, .learning {
-		// width: 32%;
 		width: 50%;
 		padding: 0 1rem;
 		h4 {
 			text-align: center;
 		}
 	}
-	// .languages, .tools {
 	.languages {
 		border-right: 2px dotted $gold;
 	}
@@ -29,5 +27,22 @@
 	align-content: center;
 	li {
 		width: 33.3%;
+	}
+}
+
+@media (max-width: 940px) {
+	.skillsItems {
+		display: block;
+		.languages, .tools {
+			width: 100%;
+		}
+		.languages {
+			border-right: none;
+			border-bottom: 2px dotted $gold;
+			padding-bottom: 2rem;
+		}
+		.tools {
+			padding-top: 2rem;
+		}
 	}
 }

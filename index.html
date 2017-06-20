@@ -4,33 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kait Sykes | Front-end web developer</title>
+	<link rel="icon" type="image/png" href="assets/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Lato:400i|Montserrat:400,700" rel="stylesheet">
 	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="/public/styles/style.css">
+	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
 	<header>
-		<div class="outerWrapper">
-			<div class="largeLogo">
-				<h1>Kait Sykes</h1>
-			</div>
-			<!-- <div class="downArrow">
+		<div class="hero">
+			<div class="outerWrapper">
+				<div class="largeLogo">
+					<h1>Kait Sykes</h1>
+				</div>
+				<!-- <div class="downArrow">
 			</div> -->
 		</div>
+		</div>
+		<div class="wrapper">
+			<nav>
+				<div class="navWrapper">
+					<img src="/assets/logo-gold.png"  />
+					<ul class="navLinks">
+						<li class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i>
+							<ul class="hamburgerLinks">
+								<li><a href='/'>Home</a></li>
+								<li><a href='#about'>About</a></li>
+								<li><a href='#skills'>Skills</a></li>
+								<li><a href='#portfolio'>Portfolio</a></li>
+								<li><a href='#contact'>Contact</a></li>
+							</ul>
+						</li>
+						<li class="navItem"><a href='/'>Home</a></li>
+						<li class="navItem"><a href='#about'>About</a></li>
+						<li class="navItem"><a href='#skills'>Skills</a></li>
+						<li class="navItem"><a href='#portfolio'>Portfolio</a></li>
+						<li class="navItem"><a href='#contact'>Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</header>
-	<div class="wrapper">
-		<nav>
-			<img src="/assets/logo-gold.png"  />
-			<ul class="navLinks">
-				<li><a href='/'>Home</a></li>
-				<li><a href='#about'>About</a></li>
-				<li><a href='#skills'>Skills</a></li>
-				<li><a href='#portfolio'>Portfolio</a></li>
-				<li><a href='#contact'>Contact</a></li>
-			</ul>
-		</nav>
-	</div>
 
 		<main>
 			<!-- ABOUT -->
@@ -38,7 +52,7 @@
 				<div class="wrapper">
 					<div class="bioText">
 						<h3>About Me</h3>
-						<p>Hi! I’m a front-end web developer based in Toronto, ON and a graduate of HackerYou’s Front End Web Development Bootcamp. I love learning so much I also have a B.A. in English Literature and an M.A. in Public Texts. My voracious curiosity has been invaluable as a professional Googler / developer.</p>
+						<p>I’m a front-end web developer based in Toronto, ON and a graduate of HackerYou’s Front End Web Development Bootcamp. I love learning so much I also have a B.A. in English Literature and an M.A. in Public Texts. My voracious curiosity has been invaluable as a professional Googler / developer.</p>
 						<p>When I’m not coding, you can find me learning how to knit for the third time, reading the latest fantasy novel, snoozing in the park, making new dog friends, and trying to be in the presence of piney trees as much as possible.</p>
 						<p class="resume"><a href="" class="buttonLinkLarge">Download my resume</a></p>
 					</div>
@@ -199,7 +213,7 @@
 						</div>
 						<div class="portfolioPieceText">
 							<h4>JavaScript Web App</h4>
-							<p>Does your memory need some work? Try out this fun Toronto-themed flip card game, featured such Toronto characters as trash pandas, the High Park capybara, and Drake. Project built in conjunction with <a href="">Estela Thomson</a>.</p>
+							<p>Does your memory need some work? Try out this fun Toronto-themed flip card game, featured such Toronto characters as trash pandas, the High Park capybara, and Drake. Project built in conjunction with <a href="http://estelacodes.com/">Estela Thomson</a>.</p>
 							<ul class="portfolioTechList">
 								<li>Javascript</li>
 								<li>ES6</li>
@@ -258,7 +272,7 @@
 			</section>
 
 			<footer>
-				<p>Photo credit: <a href="http://pamlau.com/" target="_blank">Pam Lau</a>. © 2017 Kait Sykes. All rights reserved.</p>
+				<p class="credit">Photo credit: <a href="http://pamlau.com/" target="_blank">Pam Lau</a>. © 2017 Kait Sykes. All rights reserved.</p>
 			</footer>
 		</main>
 	</div>

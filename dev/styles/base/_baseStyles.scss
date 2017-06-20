@@ -10,13 +10,14 @@ body {
 
 .wrapper {
 	max-width: 1170px;
+	width: 70%;
 	margin: 0 auto;
-	padding: 0 4rem;
 }
 
 .fixed {
 	position: fixed;
 	top: 0;
-	height: 70px;
-	z-index: 1;
+	width: 70%;
+	max-width: 1170px;
+	z-index: 9999;
 }

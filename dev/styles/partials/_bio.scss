@@ -20,3 +20,20 @@
 .resume {
 	margin: 2.5rem 0 0 0;
 }
+
+@media (max-width: 1200px) {
+	#bio .wrapper {
+		align-items: center;
+	}
+}
+
+@media (max-width: 940px) {
+	#bio .wrapper {
+		.bioText {
+			width: 100%;
+		}
+		.bioImage {
+			display: none;
+		}
+	}
+}

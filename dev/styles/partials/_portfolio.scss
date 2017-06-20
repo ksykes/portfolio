@@ -33,3 +33,21 @@
 .portfolioTechList {
 	margin-bottom: 2rem;
 }
+
+@media (max-width: 940px) {
+	.portfolioPiece {
+		flex-direction: column;
+		&:nth-child(odd) .portfolioPieceText {
+			order: 1;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+		.portfolioPieceText, .portfolioPieceImage {
+			width: 100%;
+		}
+		.portfolioPieceText {
+			padding-top: 2rem;
+		}
+	}
+}
