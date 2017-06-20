@@ -150,7 +150,6 @@ p {
 .portfolioTechList {
 	margin: 0;
 	padding: 0;
-	// display: inline-block;
 	li {
 		list-style: none;
 		margin: 0 0;
@@ -163,7 +162,6 @@ p {
 		line-height: 1.5rem;
 		text-transform: uppercase;
 		display: inline-block;
-		// border: 2px solid $gold;
 	}
 }
 
@@ -194,6 +192,7 @@ p {
 	display: inline-block;
 	border: 2px solid $gold;
 	text-decoration: none;
+	margin-top: 1.5rem;
 	&:hover {
 		background: $black;
 		border: 2px solid $black;
@@ -201,9 +200,38 @@ p {
 	}
 }
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 5.5rem;
+	}
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	h1 {
-		font-size: 5rem;
+		font-size: 3.5rem;
+	}
+	.smallLogo h1 {
+		font-size: 2rem;
+	}
+}
+
+/* Phone */
+@media (max-width: 350px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+		&:before {
+			top: 2.5rem;
+		}
+	}
+	.buttonLinkLarge {
+		font-size: 0.8rem;
+	}
+	.credit {
+		padding: 0 0.5rem;
 	}
 }

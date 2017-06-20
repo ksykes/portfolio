@@ -1,5 +1,6 @@
 #contact {
 	background-color: $heroColor;
+	height: 100%;
 	.wrapper {
 		text-align: center;
 	}
@@ -33,5 +34,25 @@
 		i {
 			padding-right: 1rem;
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	.smallLogo {
+		margin: 1.5rem 0;
+	}
+	#contact h2 {
+		font-size: 1rem;
+		margin: 1rem 0;
+	}
+	.credit {
+		font-size: 1rem;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.credit {
+		font-size: 0.75rem;
 	}
 }
