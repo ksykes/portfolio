@@ -41,6 +41,7 @@ nav {
 				color: $black;
 				&:hover {
 					color: $gold;
+					transition: all 0.5s;
 				}
 			}
 		}
@@ -49,6 +50,13 @@ nav {
 
 .hamburger {
 	display: none;
+}
+
+.hamburgerLinks li {
+	padding-bottom: 0.5rem;
+	&:last-child {
+		padding-bottom: 0;
+	}
 }
 
 /* Landscape phone to portrait tablet */

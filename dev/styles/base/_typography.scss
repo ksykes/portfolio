@@ -75,6 +75,7 @@ h2 {
 		text-decoration: none;
 		&:hover {
 			color: $white;
+			transition: all 0.5s;
 		}
 	}
 }
@@ -104,7 +105,7 @@ h3 {
 h4 {
 	font-family: $Montserrat;
 	color: $black;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 0;
@@ -120,6 +121,7 @@ p {
 		text-decoration: none;
 		&:hover {
 			color: $darkGrey;
+			transition: all 0.5s;
 		}
 	}
 }
@@ -136,11 +138,11 @@ p {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 	li {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		text-align: center;
 		i {
 			font-size: 3rem;
 		}
@@ -178,6 +180,7 @@ p {
 		background: $black;
 		border: 2px solid $black;
 		color: $white;
+		transition: all 0.5s;
 	}
 }
 
@@ -197,6 +200,7 @@ p {
 		background: $black;
 		border: 2px solid $black;
 		color: $white;
+		transition: all 0.5s;
 	}
 }
 

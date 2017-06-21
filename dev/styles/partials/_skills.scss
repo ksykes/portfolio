@@ -17,6 +17,14 @@
 	}
 	.languages {
 		border-right: 2px dotted $gold;
+		h4, li i, li p {
+			// text-align: right;
+		}
+	}
+	.tools {
+		h4, li i, li p {
+			// text-align: left;
+		}
 	}
 }
 
