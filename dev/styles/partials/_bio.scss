@@ -1,6 +1,7 @@
 #bio .wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 7rem;
 	margin-top: 7rem;
 	.bioText {
@@ -23,7 +24,7 @@
 
 @media (max-width: 1200px) {
 	#bio .wrapper {
-		align-items: center;
+		// align-items: center;
 	}
 }
 
