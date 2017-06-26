@@ -1,7 +1,10 @@
 #skills {
-	background-color: $heroColor;
-	h4, i, span, p {
-		color: $white;
+	padding: 7rem 0;
+	.background {
+		background-color: $heroColor;
+		h4, i, span, p {
+			color: $white;
+		}
 	}
 }
 

@@ -1,5 +1,5 @@
 #portfolio {
-	margin: 7rem 0 7rem 0;
+	padding: 7rem 0;
 }
 
 .portfolioPiece {
@@ -11,6 +11,7 @@
 	border-bottom: 2px dotted $gold;
 	&:last-of-type {
 		margin-bottom: 0;
+		border-bottom: none;
 	}
 	.portfolioPieceText, .portfolioPieceImage {
 		width: 50%;

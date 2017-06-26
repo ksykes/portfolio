@@ -22,3 +22,10 @@ body {
 	max-width: 1170px;
 	z-index: 9999;
 }
+
+#error {
+	margin: 9rem 0;
+	h3, p {
+		width: 100%;
+	}
+}
