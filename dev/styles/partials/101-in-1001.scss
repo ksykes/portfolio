@@ -1,0 +1,13 @@
+header.list {
+	background: $heroColor;
+	text-align: center;
+}
+
+.bucketList {
+	ol {
+		font-family: $Crete;
+		color: $darkGrey;
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+}
