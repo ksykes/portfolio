@@ -613,13 +613,3 @@ footer {
       text-decoration: none; }
       footer p a:hover {
         color: #ffffff; }
-
-header.list {
-  background: #434343;
-  text-align: center; }
-
-.bucketList ol {
-  font-family: "Lora", serif;
-  color: #707070;
-  font-size: 1rem;
-  line-height: 1.4rem; }
