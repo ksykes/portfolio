@@ -1,4 +1,3 @@
-@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -133,8 +132,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  text-shadow: 1px 1px 0 white;
+  transition: color .2s; }
+
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cantata One", serif;
   color: #ffffff;
   font-size: 7.5rem;
   font-weight: 700;
@@ -142,85 +145,24 @@ h1 {
   text-transform: uppercase;
   margin: 0 auto; }
 
-.largeLogo {
-  display: inline-block;
-  margin: 0 auto;
-  position: relative; }
-  .largeLogo h1 {
-    border: 5px solid #ffffff;
-    padding: 2rem; }
-  .largeLogo::before, .largeLogo::after {
-    content: '•';
-    font-size: 4rem;
-    color: #ae9364;
-    position: absolute;
-    top: 40%;
-    background-color: #434343;
-    line-height: 3rem; }
-  .largeLogo::before {
-    left: -0.5rem; }
-  .largeLogo::after {
-    right: -0.5rem; }
-
-.smallLogo {
-  display: inline-block;
-  margin: 0 auto;
-  position: relative; }
-  .smallLogo h1 {
-    font-size: 3rem;
-    border: 5px solid #ffffff;
-    padding: 2rem; }
-  .smallLogo::before, .smallLogo::after {
-    content: '•';
-    font-size: 4rem;
-    color: #ae9364;
-    position: absolute;
-    top: 40%;
-    background-color: #434343;
-    line-height: 3rem; }
-  .smallLogo::before {
-    left: -0.5rem; }
-  .smallLogo::after {
-    right: -0.5rem; }
-
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Imprima", sans-serif;
   color: #333333;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase; }
 
-#contact h2 {
-  text-align: center;
-  color: #ffffff; }
-  #contact h2 a {
-    color: #ae9364;
-    text-decoration: none; }
-    #contact h2 a:hover {
-      color: #ffffff;
-      transition: all 0.5s; }
-
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cantata One", serif;
   color: #333333;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
   margin-top: 0; }
-  h3::before {
-    content: '';
-    width: 4.5rem;
-    height: 3px;
-    background: #ae9364;
-    position: absolute;
-    top: 2.75rem; }
-  h3::after {
-    content: ' .';
-    color: #ae9364; }
 
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cantata One", serif;
   color: #333333;
   font-size: 1.25rem;
   font-weight: 700;
@@ -228,7 +170,7 @@ h4 {
   margin-top: 0; }
 
 p {
-  font-family: "Lora", serif;
+  font-family: "Cantata One", serif;
   color: #707070;
   font-size: 1rem;
   line-height: 1.4rem; }
@@ -239,71 +181,19 @@ p {
       color: #707070;
       transition: all 0.5s; }
 
-#portfolio p {
-  margin: 2rem 0 2rem 0; }
-
-.devicons {
-  font-size: 3rem; }
-
-.skillsItems ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.bio p {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
   text-align: center; }
-  .skillsItems ul li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .skillsItems ul li i {
-      font-size: 3rem; }
 
-.portfolioTechList {
-  margin: 0;
-  padding: 0; }
-  .portfolioTechList li {
-    list-style: none;
-    margin: 0 0;
-    padding: 0 0.75rem 0 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    color: #ae9364;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    display: inline-block; }
-
-.buttonLinkLarge {
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid #ae9364;
-  padding: 1rem; }
-  .buttonLinkLarge:hover {
-    background: #333333;
-    border: 2px solid #333333;
-    color: #ffffff;
+.skills i {
+  color: rgba(133, 146, 158, 0.75); }
+  .skills i:hover {
+    color: #34495E;
     transition: all 0.5s; }
 
-.buttonLink {
-  padding: 0.75rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #333333;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  display: inline-block;
-  border: 2px solid #ae9364;
-  text-decoration: none;
-  margin-top: 1.5rem; }
-  .buttonLink:hover {
-    background: #333333;
-    border: 2px solid #333333;
-    color: #ffffff;
-    transition: all 0.5s; }
+footer ul i {
+  font-size: 2rem; }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -331,7 +221,8 @@ p {
     padding: 0 0.5rem; } }
 
 body {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #F8FAFC; }
 
 .outerWrapper {
   max-width: 1920px;
@@ -342,7 +233,9 @@ body {
 .wrapper {
   max-width: 1170px;
   width: 70%;
-  margin: 0 auto; }
+  margin: 2rem auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed rgba(133, 146, 158, 0.75); }
 
 .fixed {
   position: fixed;
@@ -356,13 +249,26 @@ body {
   #error h3, #error p {
     width: 100%; }
 
+header {
+  background: url(../../assets/IMG_1807.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
 .hero {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   background-color: #434343;
-  height: 100vh; }
+  height: 100vh;
+  font-family: 'Cantata One', serif; }
 
 .hero .outerWrapper {
   text-align: center; }
@@ -397,7 +303,6 @@ nav {
       padding: 0; }
       nav ul li a {
         padding-left: 1rem;
-        font-family: "Montserrat", sans-serif;
         font-size: 1.3rem;
         font-weight: 700;
         text-decoration: none;
@@ -446,74 +351,31 @@ nav {
     transition: 0.5s, 0.5s, 0.5s, 0.5s;
     transform: rotate(90deg); } }
 
-#bio .wrapper {
+.languages, .tools {
+  text-align: center; }
+  .languages h4, .tools h4 {
+    width: 100%; }
+  .languages ul, .tools ul {
+    margin: 0;
+    padding: 0; }
+  .languages li, .tools li {
+    list-style: none;
+    display: inline-block; }
+    .languages li i, .tools li i {
+      font-size: 4rem; }
+    .languages li p, .tools li p {
+      display: none; }
+
+.tools {
+  margin-top: 4rem; }
+
+.languagesList, .toolsList {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 7rem 0; }
-  #bio .wrapper .bioText {
-    width: 60%;
-    padding-right: 3rem; }
-  #bio .wrapper .bioImage {
-    width: 40%; }
-    #bio .wrapper .bioImage img {
-      border-radius: 50%;
-      border: 2px solid #ae9364;
-      max-width: 100%; }
-
-.resume {
-  margin: 2.5rem 0 0 0; }
-
-@media (max-width: 940px) {
-  #bio .wrapper .bioText {
-    width: 100%;
-    padding-right: 0; }
-  #bio .wrapper .bioImage {
-    display: none; } }
-
-#skills {
-  padding: 7rem 0; }
-  #skills .background {
-    background-color: #434343; }
-    #skills .background h4, #skills .background i, #skills .background span, #skills .background p {
-      color: #ffffff; }
-
-.skillsItems {
-  display: flex;
-  padding: 2rem 0; }
-  .skillsItems .languages, .skillsItems .tools, .skillsItems .learning {
-    width: 50%;
-    padding: 0 1rem; }
-    .skillsItems .languages h4, .skillsItems .tools h4, .skillsItems .learning h4 {
-      text-align: center; }
-  .skillsItems .languages {
-    border-right: 2px dotted #ae9364; }
-
-.languagesList, .toolsList, .learningList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center; }
-  .languagesList li, .toolsList li, .learningList li {
-    width: 33.3%; }
-
-@media (max-width: 940px) {
-  .skillsItems {
-    display: block; }
-    .skillsItems .languages, .skillsItems .tools {
-      width: 100%;
-      padding: 0; }
-    .skillsItems .languages {
-      border-right: none;
-      border-bottom: 2px dotted #ae9364;
-      padding-bottom: 2rem; }
-    .skillsItems .tools {
-      padding-top: 2rem; }
-  #skills p {
-    font-size: 1rem; } }
+  align-items: center; }
 
 #portfolio {
-  padding: 7rem 0; }
+  padding: 0 0 7rem 0; }
 
 .portfolioPiece {
   display: flex;
@@ -600,16 +462,15 @@ nav {
     font-size: 0.75rem; } }
 
 footer {
-  background-color: #434343;
-  padding: 1rem 0; }
-  footer p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    color: #ffffff;
-    margin: 0; }
-    footer p a {
-      color: #ae9364;
-      text-decoration: none; }
-      footer p a:hover {
-        color: #ffffff; }
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end; }
+  footer .contact1, footer .contact2, footer .contact3 {
+    width: 33%;
+    display: inline-block; }
+
+.contact2 ul {
+  margin: 0;
+  padding: 0; }
+  .contact2 ul li {
+    list-style: none; }

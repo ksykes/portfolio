@@ -1,18 +1,17 @@
 footer {
-	background-color: $heroColor;
-	padding: 1rem 0;
-	p {
-		font-family: $Montserrat;
-		font-weight: 400;
-		text-align: center;
-		color: $white;
-		margin: 0;
-		a {
-			color: $gold;
-			text-decoration: none;
-			&:hover {
-				color: $white;
-			}
-		}
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-end;
+	.contact1, .contact2, .contact3 {
+		width: 33%;
+		display: inline-block;
+	}
+}
+
+.contact2 ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
 	}
 }

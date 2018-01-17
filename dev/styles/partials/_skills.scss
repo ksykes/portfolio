@@ -1,63 +1,30 @@
-#skills {
-	padding: 7rem 0;
-	.background {
-		background-color: $heroColor;
-		h4, i, span, p {
-			color: $white;
-		}
+.languages, .tools {
+	text-align: center;
+	h4 {
+		width: 100%;
 	}
-}
-
-.skillsItems {
-	display: flex;
-	padding: 2rem 0;
-	.languages, .tools, .learning {
-		width: 50%;
-		padding: 0 1rem;
-		h4 {
-			text-align: center;
-		}
+	ul {
+		margin: 0;
+		padding: 0;
 	}
-	.languages {
-		border-right: 2px dotted $gold;
-		h4, li i, li p {
-			// text-align: right;
-		}
-	}
-	.tools {
-		h4, li i, li p {
-			// text-align: left;
-		}
-	}
-}
-
-.languagesList, .toolsList, .learningList {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: center;
 	li {
-		width: 33.3%;
+		list-style: none;
+		display: inline-block;
+		i {
+			font-size: 4rem;
+		}
+		p {
+			display: none;
+		}
 	}
 }
 
-@media (max-width: 940px) {
-	.skillsItems {
-		display: block;
-		.languages, .tools {
-			width: 100%;
-			padding: 0;
-		}
-		.languages {
-			border-right: none;
-			border-bottom: 2px dotted $gold;
-			padding-bottom: 2rem;
-		}
-		.tools {
-			padding-top: 2rem;
-		}
-	}
-	#skills p {
-		font-size: 1rem;
-	}
+.tools {
+	margin-top: 4rem;
+}
+
+.languagesList, .toolsList {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
