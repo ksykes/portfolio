@@ -1,10 +1,19 @@
-footer {
+footer .wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-content: flex-end;
 	.contact1, .contact2, .contact3 {
 		width: 33%;
 		display: inline-block;
+	}
+	.contact1, .contact2 {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contact3 {
+		font-size: 0;
 	}
 }
 

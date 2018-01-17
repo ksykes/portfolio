@@ -192,8 +192,33 @@ p {
     color: #34495E;
     transition: all 0.5s; }
 
+footer ul {
+  font-family: "Cantata One", serif;
+  font-size: 1.25rem; }
+  footer ul li {
+    margin-top: 0.5rem; }
+  footer ul a {
+    color: rgba(133, 146, 158, 0.75);
+    text-decoration: none;
+    border-bottom: none; }
+    footer ul a:hover {
+      color: #34495E;
+      transition: all 0.5s; }
+
+.contact1 p {
+  font-family: "Imprima", sans-serif;
+  font-size: 4rem;
+  line-height: 4.25rem;
+  margin: 0;
+  text-align: right; }
+
 footer ul i {
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding-right: 1rem; }
+
+.copyright p {
+  font-family: "Imprima", sans-serif;
+  text-align: center; }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -461,13 +486,20 @@ nav {
   .credit {
     font-size: 0.75rem; } }
 
-footer {
+footer .wrapper {
   display: flex;
   justify-content: space-between;
   align-content: flex-end; }
-  footer .contact1, footer .contact2, footer .contact3 {
+  footer .wrapper .contact1, footer .wrapper .contact2, footer .wrapper .contact3 {
     width: 33%;
     display: inline-block; }
+  footer .wrapper .contact1, footer .wrapper .contact2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center; }
+  footer .wrapper .contact3 {
+    font-size: 0; }
 
 .contact2 ul {
   margin: 0;
