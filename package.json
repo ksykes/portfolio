@@ -1,26 +1,29 @@
 {
-  "name": "boilerplate",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksykes/portfolio.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksykes/portfolio/issues"
+  },
+  "homepage": "https://github.com/ksykes/portfolio#readme",
   "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "babelify": "^7.3.0",
-    "browser-sync": "^2.18.6",
-    "browserify": "^13.3.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "jquery": "^3.1.1",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "gulp-sass": "^3.1.0"
   }
 }
