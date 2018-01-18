@@ -2,6 +2,12 @@
 
 $(document).ready(function () {
 
+	// animate skill items on hover
+	$('.devicon-javascript-plain').mouseover(function () {
+		console.log('is this working?');
+		$(this).addClass('animated bounce');
+	});
+
 	// scroll nav bar
 	$(window).on('scroll', function () {
 		var headerHeight = $('header').outerHeight();

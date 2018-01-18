@@ -1,4 +1,5 @@
-.languages, .tools {
+//.languages, .tools 
+.skillsGallery {
 	text-align: center;
 	h4 {
 		width: 100%;
@@ -23,9 +24,12 @@
 	margin-top: 4rem;
 }
 
-.languagesList, .toolsList {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+// .languagesList, .toolsList 
+.skillsList {
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: center;
+	// flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }

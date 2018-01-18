@@ -187,9 +187,10 @@ p {
   line-height: 2.25rem;
   text-align: center; }
 
-.skills i {
-  color: rgba(133, 146, 158, 0.75); }
-  .skills i:hover {
+.skills li, .skills i {
+  color: rgba(133, 146, 158, 0.75);
+  font-size: 3rem; }
+  .skills li:hover, .skills i:hover {
     color: #34495E;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
@@ -402,36 +403,27 @@ nav {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); } }
 
-.languages, .tools {
+.skillsGallery {
   text-align: center; }
-  .languages h4, .tools h4 {
+  .skillsGallery h4 {
     width: 100%; }
-  .languages ul, .tools ul {
+  .skillsGallery ul {
     margin: 0;
     padding: 0; }
-  .languages li, .tools li {
+  .skillsGallery li {
     list-style: none;
     display: inline-block; }
-    .languages li i, .tools li i {
+    .skillsGallery li i {
       font-size: 4rem; }
-    .languages li p, .tools li p {
+    .skillsGallery li p {
       display: none; }
 
 .tools {
   margin-top: 4rem; }
 
-.languagesList, .toolsList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
 
 #portfolio {
   padding: 0 0 7rem 0; }
