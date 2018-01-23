@@ -3,9 +3,27 @@
 $(document).ready(function () {
 
 	// animate skill items on hover
-	$('.devicon-javascript-plain').mouseover(function () {
+	$('.devicon').mouseover(function () {
 		console.log('is this working?');
-		$(this).addClass('animated bounce');
+		$(this).parent().addClass('animated pulse');
+	});
+
+	// remove animation on skill items off hover
+	$('.devicon').mouseout(function () {
+		console.log('is this working?');
+		$(this).parent().removeClass('animated pulse');
+	});
+
+	// animate social media items on hover
+	$('.contact2 li').mouseover(function () {
+		console.log('is this working?');
+		$(this).addClass('animated pulse');
+	});
+
+	// remove animation on social media items off hover
+	$('.contact2 li').mouseout(function () {
+		console.log('is this working?');
+		$(this).removeClass('animated pulse');
 	});
 
 	// scroll nav bar

@@ -13,6 +13,9 @@
 		display: inline-block;
 		i {
 			font-size: 4rem;
+			&:hover {
+				cursor: pointer;
+			}
 		}
 		p {
 			display: none;
@@ -26,10 +29,6 @@
 
 // .languagesList, .toolsList 
 .skillsList {
-	// display: flex;
-	// justify-content: space-between;
-	// align-items: center;
-	// flex-wrap: wrap;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
