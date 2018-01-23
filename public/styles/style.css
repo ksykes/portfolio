@@ -132,12 +132,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  text-shadow: 1px 1px 0 white;
+  text-shadow: 2px 2px 0 rgba(234, 236, 238, 0.5);
   -webkit-transition: color .2s;
   transition: color .2s; }
 
 h1 {
-  font-family: "Cantata One", serif;
+  font-family: "Playfair Display", serif;
   color: #ffffff;
   font-size: 7.5rem;
   font-weight: 700;
@@ -146,14 +146,14 @@ h1 {
   margin: 0 auto; }
 
 h2 {
-  font-family: "Imprima", sans-serif;
-  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: lowercase; }
 
 h3 {
-  font-family: "Cantata One", serif;
+  font-family: "Playfair Display", serif;
   color: #333333;
   font-size: 2rem;
   font-weight: 700;
@@ -162,7 +162,7 @@ h3 {
   margin-top: 0; }
 
 h4 {
-  font-family: "Cantata One", serif;
+  font-family: "Playfair Display", serif;
   color: #333333;
   font-size: 1.25rem;
   font-weight: 700;
@@ -170,12 +170,12 @@ h4 {
   margin-top: 0; }
 
 p {
-  font-family: "Cantata One", serif;
+  font-family: "Playfair Display", serif;
   color: #707070;
   font-size: 1rem;
   line-height: 1.4rem; }
   p a {
-    color: #ae9364;
+    color: rgba(133, 146, 158, 0.75);
     text-decoration: none; }
     p a:hover {
       color: #707070;
@@ -196,7 +196,7 @@ p {
     transition: all 0.5s; }
 
 footer ul {
-  font-family: "Cantata One", serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.25rem; }
   footer ul li {
     margin-top: 0.5rem; }
@@ -210,7 +210,7 @@ footer ul {
       transition: all 0.5s; }
 
 .contact1 p {
-  font-family: "Imprima", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   line-height: 4.25rem;
   margin: 0;
@@ -221,7 +221,7 @@ footer ul i {
   padding-right: 1rem; }
 
 .copyright p {
-  font-family: "Imprima", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center; }
 
 /* Landscape phone to portrait tablet */
@@ -279,7 +279,7 @@ body {
     width: 100%; }
 
 header {
-  background: url(../../assets/IMG_1807.jpg);
+  background: url(../../assets/IMG_1656.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -532,10 +532,9 @@ footer .wrapper {
           justify-content: space-between;
   -ms-flex-line-pack: end;
       align-content: flex-end; }
-  footer .wrapper .contact1, footer .wrapper .contact2, footer .wrapper .contact3 {
+  footer .wrapper .contact {
     width: 33%;
-    display: inline-block; }
-  footer .wrapper .contact1, footer .wrapper .contact2 {
+    display: inline-block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -551,9 +550,29 @@ footer .wrapper {
             align-items: center; }
   footer .wrapper .contact3 {
     font-size: 0; }
+  footer .wrapper .contact2 ul {
+    margin: 0;
+    padding: 0; }
+    footer .wrapper .contact2 ul li {
+      list-style: none; }
 
-.contact2 ul {
-  margin: 0;
-  padding: 0; }
-  .contact2 ul li {
-    list-style: none; }
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  footer .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  footer .wrapper .contact {
+    width: 50%; }
+  footer .wrapper .contact1 {
+    width: 100%;
+    margin-bottom: 2rem; }
+  footer .wrapper .contact2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+/* Landscape phones and down */
