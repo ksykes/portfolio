@@ -137,10 +137,10 @@ body {
   transition: color .2s; }
 
 h1 {
-  font-family: "Source Serif Pro", serif;
+  font-family: "Alice", serif;
   color: #ffffff;
   font-size: 7.5rem;
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
   margin: 0 auto;
   letter-spacing: 0.05em; }
@@ -153,13 +153,21 @@ h2 {
   text-transform: lowercase; }
 
 h3 {
-  font-family: "Source Serif Pro", serif;
+  font-family: "Alice", serif;
   color: #333333;
   font-size: 2rem;
   font-weight: 700;
   position: relative;
   text-align: center;
   text-shadow: none; }
+
+h3.blog-title a {
+  color: rgba(133, 146, 158, 0.75);
+  text-decoration: none; }
+  h3.blog-title a:hover {
+    color: #707070;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
 
 h4 {
   font-family: "Montserrat", sans-serif;
@@ -171,7 +179,7 @@ h4 {
   text-align: center; }
 
 p {
-  font-family: "Source Serif Pro", serif;
+  font-family: "Alice", serif;
   color: #707070;
   font-size: 1rem;
   line-height: 1.4rem; }
@@ -197,7 +205,7 @@ p {
     transition: all 0.5s; }
 
 footer ul {
-  font-family: "Source Serif Pro", serif;
+  font-family: "Alice", serif;
   font-size: 1.25rem; }
   footer ul li {
     margin-top: 0.5rem; }
@@ -287,6 +295,15 @@ body {
   margin: 9rem 0; }
   #error h3, #error p {
     width: 100%; }
+
+.blog-item {
+  margin-bottom: 2rem; }
+
+.img-blog {
+  max-width: 100%; }
+
+.post-content {
+  display: none; }
 
 #contact {
   background-color: #434343;

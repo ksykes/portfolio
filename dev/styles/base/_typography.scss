@@ -7,7 +7,7 @@ h1 {
 	font-family: $serif;
 	color: $white;
 	font-size: 7.5rem;
-	font-weight: 700;
+	font-weight: 300;
 	text-align: center;
 	margin: 0 auto;
 	letter-spacing: 0.05em;
@@ -30,6 +30,15 @@ h3 {
 	text-align: center;
 	text-shadow: none;
 }
+
+	h3.blog-title a {
+		color: $lightBlue;
+		text-decoration: none;
+		&:hover {
+			color: $darkGrey;
+			transition: all 0.5s;
+		}
+	}
 
 h4 {
 	font-family: $sansSerif;
