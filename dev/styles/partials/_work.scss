@@ -12,8 +12,13 @@
 }
 
 .laundryThumb, .overThumb, .memoryThumb, .floralThumb, .beautyThumb, .cowThumb {
-	background-image: url(../../assets/over_thumbnail.png);
+	background-image: url(../../assets/thumbnails/over_thumbnail.png);
 	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cowThumb {
+	background-image: url(../../assets/thumbnails/cow_thumbnail.png);
 }
 
 .workItemOverlay {

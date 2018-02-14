@@ -122,6 +122,18 @@ portfolio.events = function () {
 		console.log('is this working?');
 		$(this).removeClass('animated pulse');
 	});
+
+	// animate medium button on hover
+	$('.medium').mouseover(function () {
+		console.log('is this working?');
+		$(this).addClass('animated pulse');
+	});
+
+	// remove animation on medium button off hover
+	$('.medium').mouseout(function () {
+		console.log('is this working?');
+		$(this).removeClass('animated pulse');
+	});
 };
 
 // doc ready
