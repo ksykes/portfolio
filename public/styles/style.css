@@ -406,10 +406,24 @@ header .overlay {
   width: calc((70vw - 3rem) / 3);
   height: calc((70vw - 3rem) / 3); }
 
-.laundryThumb, .overThumb, .memoryThumb, .floralThumb, .beautyThumb, .cowThumb {
-  background-image: url(../../assets/thumbnails/over_thumbnail.png);
+.laundryThumb, .overThumb, .potterThumb, .floralThumb, .beautyThumb, .cowThumb {
   background-repeat: no-repeat;
   background-size: cover; }
+
+.laundryThumb {
+  background-image: url(../../assets/thumbnails/laundry_thumbnail.png); }
+
+.overThumb {
+  background-image: url(../../assets/thumbnails/over_thumbnail.png); }
+
+.potterThumb {
+  background-image: url(../../assets/thumbnails/pottergalore_thumbnail.png); }
+
+.floralThumb {
+  background-image: url(../../assets/thumbnails/floral_thumbnail.png); }
+
+.beautyThumb {
+  background-image: url(../../assets/thumbnails/beauty_thumbnail.png); }
 
 .cowThumb {
   background-image: url(../../assets/thumbnails/cow_thumbnail.png); }
