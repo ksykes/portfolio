@@ -65,7 +65,7 @@ portfolio.blog = function () {
 	};
 	$.get("https://api.rss2json.com/v1/api.json", data, function (res) {
 		if (res.status == "ok") {
-			console.log(res);
+			// console.log(res);
 			var output = "";
 			$.each(res.items, function (k, item) {
 				var visibleSm;
@@ -101,37 +101,31 @@ portfolio.blog = function () {
 portfolio.events = function () {
 	// animate skill items on hover
 	$('.devicon').mouseover(function () {
-		console.log('is this working?');
 		$(this).parent().addClass('animated pulse');
 	});
 
 	// remove animation on skill items off hover
 	$('.devicon').mouseout(function () {
-		console.log('is this working?');
 		$(this).parent().removeClass('animated pulse');
 	});
 
 	// animate social media items on hover
 	$('.contact2 li').mouseover(function () {
-		console.log('is this working?');
 		$(this).addClass('animated pulse');
 	});
 
 	// remove animation on social media items off hover
 	$('.contact2 li').mouseout(function () {
-		console.log('is this working?');
 		$(this).removeClass('animated pulse');
 	});
 
 	// animate medium button on hover
 	$('.medium').mouseover(function () {
-		console.log('is this working?');
 		$(this).addClass('animated pulse');
 	});
 
 	// remove animation on medium button off hover
 	$('.medium').mouseout(function () {
-		console.log('is this working?');
 		$(this).removeClass('animated pulse');
 	});
 };
