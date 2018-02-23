@@ -9,7 +9,11 @@
 .workItem {
 	width: calc((70vw - 3rem) / 3);
 	height: calc((70vw - 3rem) / 3);
-	filter: drop-shadow(5px 5px 5px rgba(133, 146, 158, 0.75));
+	filter: none;
+	&:hover {
+		filter: drop-shadow(5px 5px 5px rgba(133, 146, 158, 0.75));
+		transition: all 0.25s linear;
+	}
 }
 
 .laundryThumb, .overThumb, .potterThumb, .floralThumb, .beautyThumb, .cowThumb {
@@ -60,7 +64,7 @@
 		// display: none;
 		opacity: 0;
 		visibility: hidden;
-		transition: all 1s linear;
+		// transition: all 1s linear;
 	}
 }
 
@@ -94,5 +98,6 @@
 	border-radius: 3px;
 	&:hover {
 		background: $darkBlue;
+		transition: all 1s linear;
 	}
 }

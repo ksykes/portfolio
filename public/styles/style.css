@@ -177,7 +177,7 @@ h4 {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   text-shadow: none;
   text-align: center; }
@@ -286,7 +286,7 @@ body {
   width: 70%;
   margin: 2rem auto;
   padding-bottom: 2rem;
-  border-bottom: 2px dashed rgba(133, 146, 158, 0.75); }
+  border-bottom: 2px dotted rgba(133, 146, 158, 0.75); }
 
 .fixed {
   position: fixed;
@@ -299,6 +299,30 @@ body {
   margin: 9rem 0; }
   #error h3, #error p {
     width: 100%; }
+
+@-webkit-keyframes fadeInSlow {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeInSlow {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.bounce {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
 
 header {
   background: url(../../assets/IMG_1656.jpg);
@@ -336,6 +360,10 @@ header .overlay {
           justify-content: center;
   background: rgba(124, 151, 176, 0.45); }
 
+.fadeIn {
+  -webkit-animation: 5s fadeIn;
+          animation: 5s fadeIn; }
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,6 +382,14 @@ header .overlay {
 
 .hero .outerWrapper {
   text-align: center; }
+
+.arrows {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5rem; }
+  .arrows img {
+    max-width: 1rem; }
 
 .blog h2 {
   color: #34495E;
@@ -409,8 +445,13 @@ header .overlay {
 .workItem {
   width: calc((70vw - 3rem) / 3);
   height: calc((70vw - 3rem) / 3);
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(133, 146, 158, 0.75));
-          filter: drop-shadow(5px 5px 5px rgba(133, 146, 158, 0.75)); }
+  -webkit-filter: none;
+          filter: none; }
+  .workItem:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(133, 146, 158, 0.75));
+            filter: drop-shadow(5px 5px 5px rgba(133, 146, 158, 0.75));
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
 
 .laundryThumb, .overThumb, .potterThumb, .floralThumb, .beautyThumb, .cowThumb {
   background-repeat: no-repeat;
@@ -456,9 +497,7 @@ header .overlay {
     transition: all 1s linear; }
   .workItemOverlay:hover .workTitle {
     opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear; }
+    visibility: hidden; }
 
 .workDescription {
   position: absolute;
@@ -496,7 +535,9 @@ header .overlay {
   padding: 0.5rem;
   border-radius: 3px; }
   .viewLive button:hover {
-    background: #34495E; }
+    background: #34495E;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear; }
 
 .skillsGallery {
   text-align: center; }
@@ -554,6 +595,10 @@ footer .wrapper {
     padding: 0; }
     footer .wrapper .contact2 ul li {
       list-style: none; }
+
+.lightwidget {
+  max-width: 300px;
+  margin: 0 auto; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
