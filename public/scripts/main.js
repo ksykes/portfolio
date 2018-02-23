@@ -51,7 +51,7 @@ portfolio.blog = function () {
         var srcEnd = item.content.substring(srcStart).indexOf('"') + srcStart; // find where the URL ends
         var src = item.content.substring(srcStart, srcEnd); // extract just the URL
         output += '<div class="img-container"><img class="img-blog" src="' + src + '"></div>';
-        output += '<div class="blog-content"><h3 class="blog-title"><a href="' + item.link + '">' + item.title + "</a></h3><h4></h4>";
+        output += '<div class="blog-content"><h3 class="blog-title"><a href="' + item.link + '" target="_blank">' + item.title + "</a></h3><h4></h4>";
         output += '<div class="post-content"><p class="author">By ' + item.author + "</p>";
         var yourString = item.content.replace(/<img[^>]*>/g, ""); //replace with your string.
         var maxLength = 300; // maximum number of characters to extract

@@ -63,7 +63,7 @@ portfolio.blog = function() {
         output +=
           '<div class="blog-content"><h3 class="blog-title"><a href="' +
           item.link +
-          '">' +
+          '" target="_blank">' +
           item.title +
           "</a></h3><h4></h4>";
         output +=
