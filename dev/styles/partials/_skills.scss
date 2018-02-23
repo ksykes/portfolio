@@ -1,4 +1,3 @@
-//.languages, .tools 
 .skillsGallery {
 	text-align: center;
 	h4 {
@@ -11,11 +10,9 @@
 	li {
 		list-style: none;
 		display: inline-block;
+		padding: 1.25rem 0;
 		i {
 			font-size: 4rem;
-			&:hover {
-				cursor: pointer;
-			}
 		}
 		p {
 			display: none;
@@ -23,11 +20,6 @@
 	}
 }
 
-.tools {
-	margin-top: 4rem;
-}
-
-// .languagesList, .toolsList 
 .skillsList {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);

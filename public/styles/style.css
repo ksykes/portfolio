@@ -156,7 +156,7 @@ h3 {
   font-family: "Radley", serif;
   color: #333333;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   position: relative;
   text-align: center;
   text-shadow: none; }
@@ -247,30 +247,8 @@ footer ul i {
   text-align: center; }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 5.5rem; } }
-
 /* Landscape phones and down */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 3.5rem; }
-  .smallLogo h1 {
-    font-size: 2rem; } }
-
 /* Phone */
-@media (max-width: 350px) {
-  h1 {
-    font-size: 2rem; }
-  h3 {
-    font-size: 1.5rem; }
-    h3:before {
-      top: 2.5rem; }
-  .buttonLinkLarge {
-    font-size: 0.8rem; }
-  .credit {
-    padding: 0 0.5rem; } }
-
 body {
   font-size: 62.5%;
   background-color: #F8FAFC; }
@@ -312,17 +290,38 @@ body {
   to {
     opacity: 1; } }
 
-.bounce {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
+@-webkit-keyframes smallBounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+@keyframes smallBounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+.fadeInSlow {
+  opacity: 0;
+  -webkit-animation: 3s 0.5s forwards fadeInSlow;
+          animation: 3s 0.5s forwards fadeInSlow; }
+
+.smallBounce {
   -webkit-transform-origin: center bottom;
           transform-origin: center bottom;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
+  -webkit-animation: 3s 0.5s forwards fadeInSlow, 2s 0.5s infinite forwards smallBounce;
+          animation: 3s 0.5s forwards fadeInSlow, 2s 0.5s infinite forwards smallBounce; }
 
 header {
   background: url(../../assets/IMG_1656.jpg);
@@ -360,10 +359,6 @@ header .overlay {
           justify-content: center;
   background: rgba(124, 151, 176, 0.45); }
 
-.fadeIn {
-  -webkit-animation: 5s fadeIn;
-          animation: 5s fadeIn; }
-
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,17 +372,19 @@ header .overlay {
       -ms-flex-align: center;
           align-items: center;
   background-color: #434343;
-  height: 100vh;
-  font-family: 'Cantata One', serif; }
-
-.hero .outerWrapper {
-  text-align: center; }
+  height: 100vh; }
+  .hero .outerWrapper {
+    text-align: center; }
 
 .arrows {
   width: 100%;
   position: absolute;
   bottom: 0;
   padding-bottom: 5rem; }
+  .arrows a {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem; }
   .arrows img {
     max-width: 1rem; }
 
@@ -548,16 +545,12 @@ header .overlay {
     padding: 0; }
   .skillsGallery li {
     list-style: none;
-    display: inline-block; }
+    display: inline-block;
+    padding: 1.25rem 0; }
     .skillsGallery li i {
       font-size: 4rem; }
-      .skillsGallery li i:hover {
-        cursor: pointer; }
     .skillsGallery li p {
       display: none; }
-
-.tools {
-  margin-top: 4rem; }
 
 .skillsList {
   display: grid;
