@@ -9,7 +9,6 @@
 }
 
 .blog-item {
-  margin-bottom: 2rem;
   padding-right: 1rem;
   &:last-child {
     padding-right: 0;
@@ -17,6 +16,7 @@
 }
 
 .blog-content {
+  margin-top: 2rem;
   h3 {
     font-size: 1.25rem;
   }
@@ -35,16 +35,16 @@
 
 .medium {
   display: block;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
   font-family: $sansSerif;
   font-size: 1.25rem;
   text-transform: lowercase;
-  background: $darkBlue;
-  border: none;
-  border-radius: 10px;
+  background: transparent;
+  border: 1px solid $darkBlue;
+  border-radius: 40px;
   padding: 1rem 2rem;
   a {
-    color: $white;
+    color: $darkBlue;
     text-decoration: none;
   }
 }

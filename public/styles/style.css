@@ -284,7 +284,7 @@ body {
 .wrapper {
   max-width: 1170px;
   width: 70%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   padding-bottom: 2rem;
   border-bottom: 2px dotted rgba(133, 146, 158, 0.75); }
 
@@ -404,16 +404,16 @@ header .overlay {
           justify-content: space-between; }
 
 .blog-item {
-  margin-bottom: 2rem;
   padding-right: 1rem; }
   .blog-item:last-child {
     padding-right: 0; }
 
-.blog-content h3 {
-  font-size: 1.25rem; }
-
-.blog-content h4 {
-  display: none; }
+.blog-content {
+  margin-top: 2rem; }
+  .blog-content h3 {
+    font-size: 1.25rem; }
+  .blog-content h4 {
+    display: none; }
 
 .img-blog {
   max-width: 100%; }
@@ -423,16 +423,16 @@ header .overlay {
 
 .medium {
   display: block;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   text-transform: lowercase;
-  background: #34495E;
-  border: none;
-  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #34495E;
+  border-radius: 40px;
   padding: 1rem 2rem; }
   .medium a {
-    color: #ffffff;
+    color: #34495E;
     text-decoration: none; }
 
 .workGallery {
