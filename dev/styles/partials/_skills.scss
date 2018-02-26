@@ -24,3 +24,10 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
+	
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.skillsList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

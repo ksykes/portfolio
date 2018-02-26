@@ -21,6 +21,11 @@ h2 {
 	text-transform: lowercase;
 }
 
+	.blog h2, .skills h2 {
+		color: $darkBlue;
+		text-align: center;
+	}
+
 h3 {
 	font-family: $serif;
 	color: $black;
@@ -131,12 +136,14 @@ footer ul i {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+	h3 {
+		font-size: 1.5rem;
+	}
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-}
-
-/* Phone */
-@media (max-width: 350px) {
+	h3 {
+		font-size: 2rem;
+	}
 }

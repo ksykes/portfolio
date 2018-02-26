@@ -152,6 +152,10 @@ h2 {
   font-weight: 700;
   text-transform: lowercase; }
 
+.blog h2, .skills h2 {
+  color: #34495E;
+  text-align: center; }
+
 h3 {
   font-family: "Radley", serif;
   color: #333333;
@@ -247,8 +251,15 @@ footer ul i {
   text-align: center; }
 
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem; } }
+
 /* Landscape phones and down */
-/* Phone */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 2rem; } }
+
 body {
   font-size: 62.5%;
   background-color: #F8FAFC; }
@@ -388,10 +399,6 @@ header .overlay {
   .arrows img {
     max-width: 1rem; }
 
-.blog h2 {
-  color: #34495E;
-  text-align: center; }
-
 #json-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,6 +438,12 @@ header .overlay {
   .medium a {
     color: #34495E;
     text-decoration: none; }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  #json-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .workGallery {
   display: grid;
@@ -556,6 +569,11 @@ header .overlay {
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .skillsList {
+    grid-template-columns: repeat(2, 1fr); } }
+
 footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,7 +611,6 @@ footer .wrapper {
   max-width: 300px;
   margin: 0 auto; }
 
-/* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   footer .wrapper {
@@ -606,10 +623,22 @@ footer .wrapper {
     width: 50%; }
   footer .wrapper .contact1 {
     width: 100%;
-    margin-bottom: 2rem; }
+    margin-bottom: 2.5rem; }
   footer .wrapper .contact2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
 
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .workGallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr); }
+  .workItem {
+    width: 70vw;
+    height: 70vw; }
+  footer .wrapper .contact2 {
+    width: 100%;
+    margin-bottom: 2.5rem; }
+  footer .wrapper .contact3 {
+    width: 100%; } }

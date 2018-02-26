@@ -27,10 +27,6 @@ footer .wrapper {
 	margin: 0 auto;
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 	footer .wrapper {
@@ -42,7 +38,7 @@ footer .wrapper {
 	}
 	footer .wrapper .contact1 {
 		width: 100%;
-		margin-bottom: 2rem;
+		margin-bottom: 2.5rem;
 	}
 	footer .wrapper .contact2 {
 		justify-content: center;
@@ -50,5 +46,20 @@ footer .wrapper {
 }
 
 /* Landscape phones and down */
-@media (max-width: 515px) {
+@media (max-width: 480px) {
+	.workGallery {
+		grid-template-columns: repeat(1, 1fr);
+    	grid-template-rows: repeat(1, 1fr);
+	}
+	.workItem {
+		width: 70vw;
+    	height: 70vw;
+	}
+	footer .wrapper .contact2 {
+		width: 100%;
+		margin-bottom: 2.5rem;
+	}
+	footer .wrapper .contact3 {
+		width: 100%;
+	}
 }
