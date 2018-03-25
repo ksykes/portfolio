@@ -108,7 +108,7 @@ export default class About extends React.Component {
 					</li>
 				</ul>
 			</div>
-			<p className="resume"><a href="">Download my résumé</a></p>
+			<p className="resume"><a href="/assets/resume.pdf">Download my résumé</a></p>
 			<p>Built with <a href="https://reactjs.org" target="blank">React</a> and <a href="https://github.com/VincentGarreau/particles.js/" target="blank">particles.js</a>. Hosted by <a href="https://pages.github.com" target="blank">Github Pages</a>.</p>
 		</section>;
 	}
