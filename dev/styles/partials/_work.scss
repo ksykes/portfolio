@@ -1,103 +1,104 @@
-.workGallery {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 1.5rem;
-	grid-row-gap: 1.5rem;
-}
-
-.workItem {
-	width: calc((70vw - 3rem) / 3);
-	height: calc((70vw - 3rem) / 3);
-	filter: none;
-	&:hover {
-		filter: drop-shadow(5px 5px 5px rgba(133, 146, 158, 0.75));
-		transition: all 0.25s linear;
-	}
-}
-
-.laundryThumb, .overThumb, .potterThumb, .floralThumb, .beautyThumb, .cowThumb {
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.laundryThumb {
-	background-image: url(../../assets/thumbnails/laundry_thumbnail.png);
-}
-
-.overThumb {
-	background-image: url(../../assets/thumbnails/over_thumbnail.png);
-}
-
-.potterThumb {
-	background-image: url(../../assets/thumbnails/pottergalore_thumbnail.png);
-}
-
-.floralThumb {
-	background-image: url(../../assets/thumbnails/floral_thumbnail.png);
-}
-
-.beautyThumb {
-	background-image: url(../../assets/thumbnails/beauty_thumbnail.png);
-}
-
-.cowThumb {
-	background-image: url(../../assets/thumbnails/cow_thumbnail.png);
-}
-
-.workItemOverlay {
-	width: 100%;
-	height: 100%;
-	padding: 0.75rem;
-	position: relative;
+figure {
+	background: $fadedBlue;
+	margin-bottom: 2rem;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: $workOverlay;
-	&:hover .workDescription {
-		// display: flex;
-		opacity: 1;
-		visibility: visible;
-		transition: all 1s linear;
+	.imageContainer {
+		padding: 2rem;
+		width: 40%;
+		display: inline-block;
+		img {
+			width: 100%;
+		}
 	}
-	&:hover .workTitle {
-		// display: none;
-		opacity: 0;
-		visibility: hidden;
-		// transition: all 1s linear;
+	figcaption {
+		width: 60%;
+		ul {
+		padding: 0;
+		margin: 0;
+			li {
+				list-style-type: none;
+				display: inline-block;
+				padding-right: 0.5rem;
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	figcaption.right {
+		padding: 2rem 2rem 2rem 0;
+	}
+	figcaption.left {
+		padding: 2rem 0 2rem 2rem;
 	}
 }
 
-.workDescription {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: $lightBlue;
-	padding: 0.75rem;
+div.imageContainer, figcaption {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	// display: none;
-	opacity: 0;
-	visibility: hidden;
 }
 
-.viewLive button {
-	background: none;
-	border: 2px solid $darkBlue;
-	font-size: 1rem;
-	letter-spacing: 0.1rem;
+.portfolioItem {
+	position: relative;
+	&:hover .portfolioLink {
+		opacity: 1;
+		transition: 0.75s all ease-in;
+	}
+}
+
+.portfolioLink {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	background: $lightBlue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.liveButton {
+	background: $darkBlue;
+	border: none;
+	margin-top: 2rem;
 	font-family: $sansSerif;
-	font-weight: 600;
 	text-transform: uppercase;
-	color: $white;
-	padding: 0.5rem;
-	border-radius: 3px;
-	&:hover {
-		background: $darkBlue;
-		transition: all 1s linear;
+	font-size: 1rem;
+	padding: 1rem 2rem;
+	box-shadow: 2px 2px $shadow;
+	display: none;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	figure {
+		flex-wrap: wrap;
+	}
+	div.imageContainer, figure figcaption {
+		width: 100%;
+		img {
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+	div.imageContainer {
+		order: 1;
+	}
+	figure figcaption.right, figure figcaption.left {
+		padding: 2rem;
+		order: 2;
+	}
+}
+
+@media (hover: none) { 
+	.liveButton {
+		display: block;
 	}
 }

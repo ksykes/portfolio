@@ -1,137 +1,79 @@
-'use strict';
+import React from "react";
+import ReactDOM from "react-dom";
+import {
+	BrowserRouter as Router,
+	Route, NavLink } from 'react-router-dom';
+import Home from "./home.js";
+import About from "./about.js";
+import Projects from './projects.js';
 
-// App setup
-var portfolio = {};
+class App extends React.Component {
+  componentDidMount() {
+    particlesJS.load(
+      "particles-js",
+      "././assets/particlesjs-config.json",
+      function() {
+        console.log("callback - particles.js config loaded");
+      }
+    );
+  }
+	render() {
+		return <Router>
+        <div id="root">
+          <header>
+            {/* <div className="headerText"> */}
+              <h1><NavLink exact to="/">Kait Sykes</NavLink></h1>
+              <ul className="nav">
+                <li>
+                  <NavLink to="/about" activeClassName="selected">About</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/projects" activeClassName="selected">Projects</NavLink>
+                </li>
+                <li>
+                  <a href="https://medium.com/@ksykes" target="blank">Articles&nbsp;<i className="fas fa-external-link-alt"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:kaitlyn.sykes@me.com" className="contact">Contact <span className="email">kaitlyn.sykes@me.com</span></a>
+                </li>
+              </ul>
+            {/* </div> */}
+            <ul className="socialMedia">
+              <li>
+                <a href="">
+                  <i className="fab fa-github" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i className="fab fa-codepen" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i className="fab fa-twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i className="fab fa-linkedin" />
+                </a>
+              </li>
+            </ul>
+          </header>
 
-portfolio.smoothScroll = function() {
-	// Select all links with hashes
-	$('a[href*="#"]')
-		// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-		.click(function(event) {
-			// On-page links
-			if (
-				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-				&& 
-				location.hostname == this.hostname
-			) {
-			// Figure out element to scroll to
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			// Does a scroll target exist?
-			if (target.length) {
-				// Only prevent default if animation is actually gonna happen
-				event.preventDefault();
-				$('html, body').animate({
-					scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			}
-		}
-	});
-};
+          <div className="wrapper">
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+          </div>
 
-portfolio.blog = function() {
-  var $content = $("#json-content");
-  // var $feed = require('rss-to-json);
-  var data = {
-    rss_url: "https://www.medium.com/feed/@ksykes"
-  };
-  $.get("https://api.rss2json.com/v1/api.json", data, function(res) {
-    if (res.status == "ok") {
-      // console.log(res);
-      var output = "";
-      $.each(res.items, function(k, item) {
-        var visibleSm;
-        if (k < 3 - 1) {
-          visibleSm = "";
-        } else {
-          visibleSm = " visible-sm";
-        }
-        output += '<div class="blog-item">';
-        var tagIndex = item.content.indexOf("<img"); // find where the img tag starts
-        var srcIndex =
-          item.content.substring(tagIndex).indexOf("src=") + tagIndex; // find where the src attribute starts
-        var srcStart = srcIndex + 5; // find where the actual image URL starts; 5 for the length of 'src="'
-        var srcEnd = item.content.substring(srcStart).indexOf('"') + srcStart; // find where the URL ends
-        var src = item.content.substring(srcStart, srcEnd); // extract just the URL
-        output +=
-          '<div class="img-container"><img class="img-blog" src="' +
-          src +
-          '"></div>';
-        output +=
-          '<div class="blog-content"><h3 class="blog-title"><a href="' +
-          item.link +
-          '" target="_blank">' +
-          item.title +
-          "</a></h3><h4></h4>";
-        output +=
-          '<div class="post-content"><p class="author">By ' +
-          item.author +
-          "</p>";
-        var yourString = item.content.replace(/<img[^>]*>/g, ""); //replace with your string.
-        var maxLength = 300; // maximum number of characters to extract
-        // trim the string to the maximum length
-        var trimmedString = yourString.substr(0, maxLength);
-        // re-trim if we are in the middle of a word
-        trimmedString = trimmedString.substr(
-          0,
-          Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))
-        );
-        output +=
-          '<p class="post-preview">' +
-          trimmedString +
-          '... </p><a href="' +
-          item.link +
-          '" class="blog-link" target="_blank">Read more</a>';
-        output += "</div></div></div>";
-        return k < 3 - 1;
-      });
-      $content.html(output);
-    }
-  });
-};
+          <section className="copyright">
+            <p>© {new Date().getFullYear()} Kait Sykes</p>
+          </section>
+        </div>
+      </Router>;
+	}
+}
 
-portfolio.events = function() {
-	// animate skill items on hover
-	$('.devicon').mouseover(function () {
-		$(this).parent().addClass('animated pulse');
-	});
-
-	// remove animation on skill items off hover
-	$('.devicon').mouseout(function () {
-		$(this).parent().removeClass('animated pulse');
-	});
-
-	// animate social media items on hover
-	$('.contact2 li').mouseover(function () {
-		$(this).addClass('animated pulse');
-	});
-
-	// remove animation on social media items off hover
-	$('.contact2 li').mouseout(function () {
-		$(this).removeClass('animated pulse');
-	});
-
-	// animate medium button on hover
-	$('.medium').mouseover(function () {
-		$(this).addClass('animated pulse');
-	});
-
-	// remove animation on medium button off hover
-	$('.medium').mouseout(function () {
-		$(this).removeClass('animated pulse');
-	});
-};
-
-portfolio.init = function() {
-  portfolio.smoothScroll();
-  portfolio.blog();
-  portfolio.events();
-};
-
-// doc ready
-$(function() {
-	portfolio.init();
-});
+ReactDOM.render(<App />, document.getElementById('app'));

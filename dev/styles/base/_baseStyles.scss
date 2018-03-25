@@ -1,34 +1,25 @@
 body {
 	font-size: 62.5%;
-	background-color: $background;
+	background-color: $darkBlue;
 }
 
-.outerWrapper {
-	max-width: 1920px;
-	width: 100%;
-	margin: 0 auto;
+main#app {
+	max-width: 1170px;
+	width: 80%;
+	margin: 4rem auto;
 	padding: 0 4rem;
 }
 
-.wrapper {
-	max-width: 1170px;
-	width: 70%;
-	margin: 4rem auto;
-	padding-bottom: 2rem;
-	border-bottom: 2px dotted $lightBlue;
-}
-
-.fixed {
+#particles-js {
 	position: fixed;
 	top: 0;
-	width: 70%;
-	max-width: 1170px;
-	z-index: 9999;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
 }
 
-#error {
-	margin: 9rem 0;
-	h3, p {
-		width: 100%;
-	}
+div#root {
+	display: flex;
+	flex-direction: column;
 }
