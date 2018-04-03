@@ -1,6 +1,10 @@
 body {
 	font-size: 62.5%;
 	background-color: $darkBlue;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	height: 100%;
 }
 
 main#app {
@@ -8,6 +12,7 @@ main#app {
 	width: 80%;
 	margin: 4rem auto;
 	padding: 0 4rem;
+	flex: 1 0 auto;
 }
 
 #particles-js {
@@ -19,7 +24,9 @@ main#app {
 	z-index: -1;
 }
 
-div#root {
-	display: flex;
-	flex-direction: column;
+/* Portrait phones and down */
+@media (max-width: 480px) {
+	main#app {
+		padding: 0 2rem;
+	}
 }

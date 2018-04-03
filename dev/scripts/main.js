@@ -67,10 +67,6 @@ class App extends React.Component {
             <Route path="/about" component={About} />
             <Route path="/projects" component={Projects} />
           </div>
-
-          <section className="copyright">
-            <p>© {new Date().getFullYear()} Kait Sykes</p>
-          </section>
         </div>
       </Router>;
 	}

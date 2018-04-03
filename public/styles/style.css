@@ -335,13 +335,25 @@ a.portfolioLink {
 
 body {
   font-size: 62.5%;
-  background-color: #34495e; }
+  background-color: #34495e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  height: 100%; }
 
 main#app {
   max-width: 1170px;
   width: 80%;
   margin: 4rem auto;
-  padding: 0 4rem; }
+  padding: 0 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
 
 #particles-js {
   position: fixed;
@@ -351,14 +363,10 @@ main#app {
   left: 0;
   z-index: -1; }
 
-div#root {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+/* Portrait phones and down */
+@media (max-width: 480px) {
+  main#app {
+    padding: 0 2rem; } }
 
 @-webkit-keyframes fadeInSlow {
   from {
