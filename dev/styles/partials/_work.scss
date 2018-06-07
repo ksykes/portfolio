@@ -97,6 +97,14 @@ div.imageContainer, figcaption {
 	}
 }
 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.portfolioLink {
+		display: none;
+	}
+}
+
+/* Devices without hover */
 @media (hover: none) { 
 	.liveButton {
 		display: block;

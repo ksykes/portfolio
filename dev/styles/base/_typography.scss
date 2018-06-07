@@ -1,80 +1,35 @@
 h1 {
-	font-family: $serif;
-	// color: rgb(175, 190, 207);
+	font-family: $sansSerif;
 	color: $gold;
-	font-size: 2rem;
-	font-weight: 300;
+	font-size: 4rem;
 	margin: 0;
-	letter-spacing: 0em;
-	a {
-		// color: rgb(175, 190, 207);
-		color: $gold;
-		text-decoration: none;
-	}
 }
 
 h2 {
 	font-family: $sansSerif;
-	color: rgb(175, 190, 207);
+	color: $gold;
 	font-size: 1.75rem;
 	font-weight: 700;
-	text-transform: lowercase;
-	a {
-		color: rgb(175, 190, 207);
-		text-decoration: none;
-		position: relative;
-		&:before {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -0.15rem;
-			height: 0.2rem;
-			width: 100%;
-			background: $gold;
-			opacity: 0.5;
-			z-index: 10;
-		}
-		&:hover:before {
-			opacity: 1;
-			transition: all 0.5s ease-in;
-		}
-	}
+	margin-top: 4rem;
 }
 
 h3 {
-	font-family: $serif;
-	color: $black;
-	font-size: 2rem;
-	font-weight: 400;
-	position: relative;
-	text-align: center;
-	text-shadow: none;
-}
-
-	.about h3 {
-		font-family: $sansSerif;
-		text-align: left;
-		font-size: 1.75rem;
-		color: $gold;
-	}
-
-h4 {
 	font-family: $sansSerif;
-	color: $white;
-	font-size: 1rem;
-	font-weight: 400;
-	text-transform: uppercase;
+	color: $lightBlue;
+	font-size: 2rem;
+	position: relative;
+	text-align: left;
 	text-shadow: none;
-	text-align: center;
 }
 
 p {
 	font-family: $serif;
-	color: rgb(175, 190, 207);
-	font-size: 1.25rem;
-	line-height: 1.75rem;
+	color: $darkBlue;
+	font-size: 1.1rem;
+	letter-spacing: 0.01rem;
+	line-height: 1.5rem;
 	a {
-		color: rgb(175, 190, 207);
+		color: $lightBlue;
 		text-decoration: none;
 		position: relative;
 		&:before {
@@ -84,112 +39,41 @@ p {
 			bottom: -0.15rem;
 			height: 0.2rem;
 			width: 100%;
-			background: $gold;
+			background: $lightBlue;
 			opacity: 0.5;
 			z-index: 10;
 		}
+		&:hover {
+			color: $darkBlue;
+			transition: all 0.25s ease-in;
+		}
 		&:hover:before {
 			opacity: 1;
-			transition: all 0.5s ease-in;
+			background: $darkBlue;
+			transition: all 0.25s ease-in;
 		}
 	}
 }
 
-	.about p {
-		font-size: 1.1rem;
-		line-height: 1.5rem;
-	}
-
-	p span.highlight {
-		color: $gold;
-	}
-
-ul.nav, ul.socialMedia {
+ul.socialMedia {
 	font-size: 1.5rem;
 	line-height: 2rem;
-	font-family: 'Radley', serif;
+	font-family: $sansSerif;
 	a {
-		color: $lightBlue;
+		color: $darkBlue;
 		text-decoration: none;
 		position: relative;
 		&:hover {
-			color: $gold;
-			transition: all 0.5s ease-in;
+			color: $lightBlue;
+			transition: all 0.25s ease-in;
 		}
 	}
-	i.fa-external-link-alt {
-		font-size: 1rem;
-		padding-left: 0.5rem;
-	}
-	.email {
-		font-size: 1rem;
-	}
 }
 
-ul.socialMedia a {
-	color: $gold;
-	&:hover {
-		color: $lightBlue;
-		transition: all 0.5s ease-in;
-	}
-}
-
-ul.nav a.selected:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -0.15rem;
-	height: 0.2rem;
-	width: 100%;
-	background: $lightBlue;
-	z-index: 10;
-}
-
-ul.nav a.selected:hover {
-	color: $lightBlue;
-}
-
-section.about .education ul, section.about .experience ul {
+footer p {
 	font-family: $serif;
-	color: rgb(175, 190, 207);
-	font-size: 1rem;
-	line-height: 1.25rem;
-	list-style: none;
-	padding: 0;
-	margin: 0 0 2rem 0;
-	li:first-child {
-		color: $gold;
-		font-family: $sansSerif;
-		text-transform: uppercase;
-		letter-spacing: 0.15rem;
-	}
-	a {
-		color: $gold;
-		text-decoration: none;
-		position: relative;
-		line-height: 1.75rem;
-		&:before {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -0.15rem;
-			height: 0.2rem;
-			width: 100%;
-			background: $gold;
-			opacity: 0.5;
-			z-index: 10;
-		}
-		&:hover:before {
-			opacity: 1;
-			transition: all 0.5s ease-in;
-		}
-	}
-}
-
-.copyright p {
-	font-family: $sansSerif;
 	text-align: center;
-	font-size: 1rem;
+	font-size: 0.75rem;
 }
 
 figcaption {
@@ -202,7 +86,7 @@ figcaption {
 		margin: 0;
 	}
 	p {
-		color: black;
+		color: $black;
 		font-size: 1rem;
 	}
 	ul li {
@@ -230,6 +114,9 @@ a.portfolioLink {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+	h1 {
+		font-size: 3.75rem;
+	}
 	h3 {
 		font-size: 2rem;
 	}
