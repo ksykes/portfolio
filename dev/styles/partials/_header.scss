@@ -1,73 +1,30 @@
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 2rem;
-	.links {
-		display: flex;
-		align-items: flex-end;
-	}
-	h1 {
-		display: inline-block;
-		padding-right: 2.5rem;
-	}
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 2rem 2rem 0 0;
+	opacity: 1;
 	ul {
-		display: inline-block;
 		padding: 0;
 		margin: 0;
-		list-style: none;
-	}
-	ul.nav li {
-		display: inline;
-		padding-right: 2rem;
-		&:last-child {
-			padding-right: 0;
+		li {
+			list-style: none;
+			display: inline-block;
 		}
 	}
-	ul.socialMedia li {
-		display: inline;
-		list-style: none;
-		font-size: 1.75rem;
-		padding-right: 1rem;
-		&:last-child {
-			padding-right: 0;
-		}
-	}
-	.email {
-		opacity: 0;
-	}
-	.contact:hover .email {
-		opacity: 1;
-		// transition: all 0.5s ease-in;
-	}
+}
+
+header.hide {
+	opacity: 0;
+	transition: 1.5s all ease-in;
 }
 
 @media (max-width: 1400px) {
-	header {
-		flex-wrap: wrap;
-		h1 {
-			width: 100%;
-		}
-	}
 }
 
 @media (max-width: 1150px) {
-	header ul {
-		width: 100%;
-	}
-	span.email {
-		display: none;
-	}
-	ul.nav {
-		margin-top: 2rem;
-	}
-	ul.socialMedia {
-		margin-top: 1rem;
-	}
 }
 
 @media (max-width: 650px) {
-	header ul.nav li {
-		display: block;
-	}
 }

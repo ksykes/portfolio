@@ -287,68 +287,23 @@ div.profile_image {
     padding-top: 4rem; } }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem; }
-  header .links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-  header h1 {
-    display: inline-block;
-    padding-right: 2.5rem; }
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem 2rem 0 0;
+  opacity: 1; }
   header ul {
-    display: inline-block;
     padding: 0;
-    margin: 0;
-    list-style: none; }
-  header ul.nav li {
-    display: inline;
-    padding-right: 2rem; }
-    header ul.nav li:last-child {
-      padding-right: 0; }
-  header ul.socialMedia li {
-    display: inline;
-    list-style: none;
-    font-size: 1.75rem;
-    padding-right: 1rem; }
-    header ul.socialMedia li:last-child {
-      padding-right: 0; }
-  header .email {
-    opacity: 0; }
-  header .contact:hover .email {
-    opacity: 1; }
+    margin: 0; }
+    header ul li {
+      list-style: none;
+      display: inline-block; }
 
-@media (max-width: 1400px) {
-  header {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    header h1 {
-      width: 100%; } }
-
-@media (max-width: 1150px) {
-  header ul {
-    width: 100%; }
-  span.email {
-    display: none; }
-  ul.nav {
-    margin-top: 2rem; }
-  ul.socialMedia {
-    margin-top: 1rem; } }
-
-@media (max-width: 650px) {
-  header ul.nav li {
-    display: block; } }
+header.hide {
+  opacity: 0;
+  -webkit-transition: 1.5s all ease-in;
+  transition: 1.5s all ease-in; }
 
 .skills ul {
   margin: 0;
