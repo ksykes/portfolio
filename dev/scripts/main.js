@@ -5,7 +5,9 @@ particlesJS.load('particles-js', 'assets/particles-config.json', function () {
 
 (function() {
     var header = document.getElementById("header-social");
+    var arrow = document.getElementById("arrow");
     document.getElementById("content").onscroll = function scrollFunction() {
+        arrow.className = "hide";
         header.className = "hide";
     };
 })();
