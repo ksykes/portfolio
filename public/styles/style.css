@@ -152,6 +152,37 @@ h3 {
   text-align: left;
   text-shadow: none; }
 
+h4 {
+  font-family: "Prata", sans-serif;
+  color: #a8996e;
+  font-size: 1.25rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.5rem;
+  text-transform: lowercase; }
+  h4 a {
+    color: #a8996e;
+    text-decoration: none;
+    position: relative; }
+    h4 a:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.15rem;
+      height: 0.2rem;
+      width: 100%;
+      background: #afbecf;
+      opacity: 0.5;
+      z-index: 10; }
+    h4 a:hover {
+      color: #34495e;
+      -webkit-transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in; }
+    h4 a:hover:after {
+      opacity: 1;
+      background: #34495e;
+      -webkit-transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in; }
+
 p {
   font-family: "Overpass", serif;
   color: #34495e;
@@ -162,7 +193,7 @@ p {
     color: #afbecf;
     text-decoration: none;
     position: relative; }
-    p a:before {
+    p a:after {
       content: '';
       position: absolute;
       left: 0;
@@ -176,7 +207,7 @@ p {
       color: #34495e;
       -webkit-transition: all 0.25s ease-in;
       transition: all 0.25s ease-in; }
-    p a:hover:before {
+    p a:hover:after {
       opacity: 1;
       background: #34495e;
       -webkit-transition: all 0.25s ease-in;
@@ -194,6 +225,10 @@ ul.socialMedia {
       color: #afbecf;
       -webkit-transition: all 0.25s ease-in;
       transition: all 0.25s ease-in; }
+
+.about p {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
 
 footer p {
   font-family: "Overpass", serif;
@@ -255,7 +290,8 @@ main {
   padding: 6rem 3rem 0 3rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
+          flex: 1 0 auto;
+  position: relative; }
 
 div.profile_image {
   width: 40%;
@@ -304,100 +340,6 @@ header.hide {
   opacity: 0;
   -webkit-transition: 1.5s all ease-in;
   transition: 1.5s all ease-in; }
-
-.skills ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.skills li {
-  list-style: none;
-  display: inline-block;
-  padding: 1.25rem 0;
-  width: calc(100% / 6); }
-  .skills li i {
-    font-size: 4rem;
-    color: #afbecf; }
-  .skills li p {
-    display: none; }
-
-.resume {
-  text-align: center;
-  margin: 2rem auto;
-  font-family: "Prata", sans-serif;
-  font-size: 1.25rem;
-  border: 1px solid #34495e;
-  border-radius: 40px;
-  padding: 1rem 2rem; }
-  .resume a {
-    color: #a8996e;
-    text-decoration: none; }
-
-@media (max-width: 900px) {
-  .skills li {
-    width: calc(100% / 4); } }
-
-@media (max-width: 600px) {
-  .skills li {
-    width: calc(100% / 2); } }
-
-@media (max-width: 480px) {
-  .skillsList {
-    grid-template-columns: repeat(4, 1fr); } }
-
-#json-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.blog-item {
-  padding-right: 1rem; }
-  .blog-item:last-child {
-    padding-right: 0; }
-
-.blog-content {
-  margin-top: 2rem; }
-  .blog-content h3 {
-    font-size: 1.25rem; }
-  .blog-content h4 {
-    display: none; }
-
-.img-blog {
-  max-width: 100%; }
-
-.post-content {
-  display: none; }
-
-.medium {
-  display: block;
-  margin: 1.5rem auto 0 auto;
-  font-family: "Prata", sans-serif;
-  font-size: 1.25rem;
-  text-transform: lowercase;
-  background: transparent;
-  border: 1px solid #34495e;
-  border-radius: 40px;
-  padding: 1rem 2rem; }
-  .medium a {
-    color: #34495e;
-    text-decoration: none; }
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  #json-content {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
 
 figure {
   background: rgba(175, 190, 207, 0.5);
@@ -519,3 +461,64 @@ footer {
 
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+div.scrollcenter {
+  position: absolute;
+  left: 50%;
+  top: 90vh;
+  z-index: 25; }
+
+div#arrow.hide {
+  display: none; }
+
+section.scrollarrow {
+  position: relative;
+  bottom: 3%;
+  left: -50%;
+  text-align: center;
+  width: 10em; }
+
+span.arrow {
+  background-color: rgba(52, 73, 94, 0.5);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2.5em;
+  width: 2.5em;
+  margin: 0 auto;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  60% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  60% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); } }
+
+svg {
+  width: 1.5em; }
