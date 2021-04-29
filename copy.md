@@ -1,6 +1,6 @@
-#Draft Website Copy
+# Draft Website Copy
 
-##About
+## About
 
 I’m a developer, designer, mentor, and a really good creative thinker.
 
@@ -10,69 +10,69 @@ I believe well-commented code should be mandatory for every developer and a walk
 
 When I’m not coding, I’m probably hanging out with my dog or working on my annual goal of reading 100 books. I’m also fond of piney trees and winter, excellent typography, objectively terrible country music, and — much to my chagrin and eternal disappointment — the Toronto Maple Leafs.
 
-##Project Descriptions
+## Project Descriptions
 
-###ROM Ticketing
+### ROM Ticketing
 
 I began a large-scale redesign and redevelopment of a brand-new ticketing site in collaboration with two back-end developers. I conducted user research and created the functional and high-fidelity wireframes for this project.
 
 PHP, Symfony, Bootstrap, HTML, CSS, UX & UI Design, Information Architecture, Content Strategy
 
-###ROM at Home
+### ROM at Home
 
 Prompted by the global COVID-19 pandemic, the ROM pivoted to providing significant quantities of digital content that was not previously part of the programming mandate. I created a portal on the ROM website to distribute the bulk of this content.
 
 PHP, Drupal, HTML, CSS, UX & UI Design, Information Architecture, Content Strategy
 
-###Pearly Whites Dental Hygiene
+### Pearly Whites Dental Hygiene
 
 A corporate website for a dental hygienist, built with a CMS so her staff can make future content updates. I provided a custom training video library for the team’s reference.
 
 WordPress, PHP, JavaScript, CSS, UX & UI Design
 
-###Wedding Website for Brandie & Dylan
+### Wedding Website for Brandie & Dylan
 
 A wedding website with a custom form for guests to RSVP, which logs responses in a Google Sheet for the bride and groom’s reference.
 
 React, JavaScript, CSS, UX & UI Design
 
-###ROM Dior iPads
+### ROM Dior iPads
 
 I took over managing, designing, and developing the in-exhibition iPad displays for the ROM Dior exhibition. Cross-device compatibility was a large part of this project as several of the museums that purchased the exhibition used different tablets.
 
 JavaScript, jQuery, HTML, CSS, UX & UI Design, Content Strategy
 
-###ROM Treasures of a Desert Kingdom Exhibition Page
+### ROM Treasures of a Desert Kingdom Exhibition Page
 
 The Treasures of a Desert Kingdom page was the first to utilize a new Drupal content type for exhibition pages designed and developed by myself and Yoon Kang. In addition to overseeing the design and development for each exhibition page, I acted as a web project manager and created a content strategy for the exhibition.
 
 JavaScript, PHP, Drupal, CSS, UX & UI Design, Content Strategy
 
-###ROM Strategic Direction
+### ROM Strategic Direction
 
 A digitization of the ROM’s Strategic Direction, originally a print booklet.
 
 JavaScript, PHP, CSS, UX & UI Design, Content Strategy
 
-###ROM Magazine
+### ROM Magazine
 
 I conceptualized a strategy for repurposing content from the print ROM magazine and developed a Drupal content type and page views to display the articles, as a pilot project prior to a large-scale redesign and redevelopment coming in the next few years.
 
 PHP, Drupal, CSS, UX & UI Design, Content Strategy
 
-###Laundry Lessons
+### Laundry Lessons
 
 A digital laundry helper providing explanations for the icons on your clothing tags that also locates nearby laundromats. I designed and coded everything, although the laundry advice is mostly from my mother.
 
 React, JavaScript, Firebase, Google APIs, Gulp, CSS, UI Design
 
-###Pottergalore
+### Pottergalore
 
 This project is a play on Pottermore’s Harry Potter quizzes. Created in partnership with Natalie Kwok, we each worked on the design and development of this project. I was also responsible for writing the quizzes.
 
 React, JavaScript, ES6, Gulp, CSS, UI Design
 
-###Herd of Words
+### Herd of Words
 
 This cow-themed lorem ipsum generator was a project created just-for-fun with Kitty Yau. We each worked on the design, development, and the giant list of cow words.
 
