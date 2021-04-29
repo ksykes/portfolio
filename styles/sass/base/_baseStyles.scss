@@ -14,6 +14,7 @@ main {
 	padding: 6rem 3rem 0 3rem;
 	flex: 1 0 auto;
 	position: relative;
+	scroll-behavior: smooth;
 }
 
 div.profile_image {
@@ -36,8 +37,25 @@ div.profile_image {
 	z-index: -1;
 }
 
+section.projects,
+section.experience,
+section.tools {
+	margin-top: 4rem;
+}
+
+section.experience {
+	margin-bottom: 4rem;
+}
+
+/* Remove smooth scroll behaviour if unpreferred */
+@media screen and (prefers-reduced-motion: reduce) {
+	main {
+		scroll-behavior: auto;
+	}
+}
+
 /* Portrait phones and down */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 	div.profile_image {
 		width: 100%;
 		height: 35vh;
@@ -46,5 +64,7 @@ div.profile_image {
 	}
 	main {
 		padding-top: 4rem;
+		height: auto;
+		overflow-y: auto;
 	}
 }

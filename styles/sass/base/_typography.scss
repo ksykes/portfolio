@@ -3,23 +3,25 @@ h1 {
 	color: $gold;
 	font-size: 4rem;
 	margin: 0;
+	text-shadow: 1px 1px 2px $fadedGold;
 }
 
 h2 {
 	font-family: $sansSerif;
-	color: $gold;
-	font-size: 1.75rem;
-	font-weight: 700;
-	margin-top: 4rem;
+	color: $lightestBlue;
+	font-size: 2rem;
+	position: relative;
+	text-align: left;
+	text-shadow: 1px 1px 2px $fadedBlue;
 }
 
 h3 {
 	font-family: $sansSerif;
-	color: $lightBlue;
-	font-size: 2rem;
-	position: relative;
-	text-align: left;
-	text-shadow: none;
+	color: $gold;
+	font-size: 1.75rem;
+	font-weight: 700;
+	margin-top: 0;
+	text-shadow: 1px 1px 1px $fadedGold;
 }
 
 h4 {
@@ -29,84 +31,81 @@ h4 {
 	letter-spacing: 0.01rem;
 	line-height: 1.5rem;
 	text-transform: lowercase;
-	a {
-		color: $gold;
-		text-decoration: none;
-		position: relative;
-		&:after {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -0.15rem;
-			height: 0.2rem;
-			width: 100%;
-			background: $lightBlue;
-			opacity: 0.5;
-			z-index: 10;
-		}
-		&:hover {
-			color: $darkBlue;
-			transition: all 0.25s ease-in;
-		}
-		&:hover:after {
-			opacity: 1;
-			background: $darkBlue;
-			transition: all 0.25s ease-in;
-		}
-	}
 }
 
-p {
+p, li {
 	font-family: $serif;
 	color: $darkBlue;
 	font-size: 1.1rem;
 	letter-spacing: 0.01rem;
 	line-height: 1.5rem;
+}
+
+.about p {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+a {
+	color: $lightBlue;
+	text-decoration: none;
+	position: relative;
+	border-bottom: 0.1rem solid $lightBlue;
+	&:hover, &:active, &:focus, &:focus-visible, &:focus-within {
+		color: $darkBlue;
+		border-bottom: 0.2rem solid $darkBlue;
+		transition: all 0.25s ease-in;
+	}
+}
+
+ul.contactLinks {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	li {
+		display: inline-block;
+		font-size: 1rem;
+		text-transform: lowercase;
+		&::after {
+            content: ' •';
+			font-size: 0.8rem;
+            color: $gold;
+        }
+        &:last-of-type::after {
+            content: none;
+        }
+	}
 	a {
-		color: $lightBlue;
+		color: $darkBlue;
 		text-decoration: none;
-		position: relative;
-		&:after {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -0.15rem;
-			height: 0.2rem;
-			width: 100%;
-			background: $lightBlue;
-			opacity: 0.5;
-			z-index: 10;
+		span {
+			color: $lightBlue;
+			border-bottom: 0.1rem solid $lightBlue;
 		}
-		&:hover {
+		&:hover span {
 			color: $darkBlue;
-			transition: all 0.25s ease-in;
-		}
-		&:hover:after {
-			opacity: 1;
-			background: $darkBlue;
+			border-bottom: 0.2rem solid $darkBlue;
 			transition: all 0.25s ease-in;
 		}
 	}
 }
 
 ul.socialMedia {
-	font-size: 1.5rem;
 	line-height: 2rem;
 	font-family: $sansSerif;
+	li {
+		font-size: 1.5rem;
+	}
 	a {
 		color: $darkBlue;
 		text-decoration: none;
-		position: relative;
-		&:hover {
+		border-bottom: none;
+		&:hover, &:active, &:focus, &:focus-visible, &:focus-within {
 			color: $lightBlue;
+			border-bottom: none;
 			transition: all 0.25s ease-in;
 		}
 	}
-}
-
-.about p {
-	white-space: pre-wrap;
-	word-wrap: break-word;
 }
 
 footer p {
@@ -121,6 +120,7 @@ figcaption {
 		text-transform: uppercase;
 		font-size: 1.5rem;
 		color: $darkBlue;
+		text-shadow: none;
 		padding: 0;
 		margin: 0;
 	}
@@ -152,11 +152,16 @@ a.portfolioLink {
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 	h1 {
 		font-size: 3.75rem;
 	}
+
 	h3 {
 		font-size: 2rem;
+	}
+
+	figcaption h3 {
+		text-align: center;
 	}
 }

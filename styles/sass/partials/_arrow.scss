@@ -58,3 +58,10 @@ span.arrow {
 svg {
 	width: 1.5em;
 }
+
+/* Portrait phones and down */
+@media (max-width: 580px) {
+	#arrow {
+		display: none;
+	}
+}
