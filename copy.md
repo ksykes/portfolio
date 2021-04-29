@@ -42,12 +42,6 @@ I took over managing, designing, and developing the in-exhibition iPad displays 
 
 JavaScript, jQuery, HTML, CSS, UX & UI Design, Content Strategy
 
-### ROM Treasures of a Desert Kingdom Exhibition Page
-
-The Treasures of a Desert Kingdom page was the first to utilize a new Drupal content type for exhibition pages designed and developed by myself and Yoon Kang. In addition to overseeing the design and development for each exhibition page, I acted as a web project manager and created a content strategy for the exhibition.
-
-JavaScript, PHP, Drupal, CSS, UX & UI Design, Content Strategy
-
 ### ROM Strategic Direction
 
 A digitization of the ROM’s Strategic Direction, originally a print booklet.
@@ -64,16 +58,10 @@ PHP, Drupal, CSS, UX & UI Design, Content Strategy
 
 A digital laundry helper providing explanations for the icons on your clothing tags that also locates nearby laundromats. I designed and coded everything, although the laundry advice is mostly from my mother.
 
-React, JavaScript, Firebase, Google APIs, Gulp, CSS, UI Design
-
-### Pottergalore
-
-This project is a play on Pottermore’s Harry Potter quizzes. Created in partnership with Natalie Kwok, we each worked on the design and development of this project. I was also responsible for writing the quizzes.
-
-React, JavaScript, ES6, Gulp, CSS, UI Design
+React, JavaScript, Firebase, Google APIs, CSS, Gulp, UI Design
 
 ### Herd of Words
 
 This cow-themed lorem ipsum generator was a project created just-for-fun with Kitty Yau. We each worked on the design, development, and the giant list of cow words.
 
-JavaScript, jQuery, ES6, Gulp, CSS, UI Design
+JavaScript, jQuery, CSS, Gulp, UI Design
