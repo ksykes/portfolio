@@ -6,9 +6,9 @@ I’m a developer, designer, mentor, and a really good creative thinker.
 
 As a Digital Developer and Designer at the Royal Ontario Museum, I hang out underneath dinosaur bones and strategize, design, and develop the ROM’s corporate website, digital signage, microsites, and web apps. Before that, I worked at House of Anansi Press and Groundwood Books as an ebook developer, which was my gateway drug to learning code.
 
-I believe well-commented code should be mandatory for every developer and a walk around the block will always get me unstuck when I’ve hit a roadblock. My current toolkit includes React, Node.js, Drupal, WordPress, PHP, JavaScript, jQuery, HTML, CSS, and Git. I’ve also dabbled in back-end development with Express and MongoDB. I use Adobe XD and Sketch to wireframe and mock up my projects and Adobe Creative Suite for graphic design. Accessibility standards checklist, cross-browser testing, responsive design, and user testing are all part of my process before I deploy a project.
+I’m passionate about building friendly, intuitive user-focused websites and applications that are fully accessible. I believe well-commented code should be mandatory for every developer and a walk around the block will always get me unstuck when I’ve hit a roadblock. My current toolkit includes React, Node.js, Drupal, WordPress, PHP, JavaScript, jQuery, HTML, CSS, and Git. I’ve also dabbled in back-end development with Express and MongoDB. I use Adobe XD and Sketch to wireframe and mock up my projects and Adobe Creative Suite for graphic design. Accessibility standards checklist, cross-browser testing, responsive design, and user testing are all part of my process before I deploy a project.
 
-When I’m not coding, I’m probably hanging out with my dog or working on my annual goal of reading 100 books. I’m also fond of piney trees and winter, excellent typography, objectively terrible country music, and — much to my chagrin and eternal disappointment — the Toronto Maple Leafs.
+When I’m not coding, I’m probably hanging out with my dog or working on my annual goal of reading 100 books. I’m also fond of piney trees and winter, excellent typography, and — much to my chagrin and eternal disappointment — the Toronto Maple Leafs.
 
 ## Project Descriptions
 
