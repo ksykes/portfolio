@@ -222,7 +222,7 @@ a {
   border-bottom: 0.1rem solid #5d7998;
 }
 
-a:hover, a:active, a:focus, a:focus-visible, a:focus-within {
+a:hover, a:active, a:focus {
   color: #34495e;
   border-bottom: 0.2rem solid #34495e;
   -webkit-transition: all 0.25s ease-in;
@@ -283,7 +283,7 @@ ul.socialMedia a {
   border-bottom: none;
 }
 
-ul.socialMedia a:hover, ul.socialMedia a:active, ul.socialMedia a:focus, ul.socialMedia a:focus-visible, ul.socialMedia a:focus-within {
+ul.socialMedia a:hover, ul.socialMedia a:active, ul.socialMedia a:focus {
   color: #5d7998;
   border-bottom: none;
   -webkit-transition: all 0.25s ease-in;
@@ -507,9 +507,7 @@ div.imageContainer, figcaption {
 
 .portfolioItem:hover .portfolioLink,
 .portfolioItem:active .portfolioLink,
-.portfolioItem:focus .portfolioLink,
-.portfolioItem:focus-visible .portfolioLink,
-.portfolioItem:focus-within .portfolioLink {
+.portfolioItem:focus .portfolioLink {
   opacity: 1;
 }
 
@@ -536,7 +534,7 @@ a.portfolioLink {
   transition: 0.5s all ease-in-out;
 }
 
-a.portfolioLink:hover, a.portfolioLink:active, a.portfolioLink:focus, a.portfolioLink:focus-visible, a.portfolioLink:focus-within {
+a.portfolioLink:hover, a.portfolioLink:active, a.portfolioLink:focus {
   border-bottom: none;
 }
 
@@ -558,7 +556,7 @@ a.liveButton {
   transition: 0.3s all ease-in;
 }
 
-a.liveButton:hover, a.liveButton:active, a.liveButton:focus, a.liveButton:focus-visible, a.liveButton:focus-within {
+a.liveButton:hover, a.liveButton:active, a.liveButton:focus {
   background: #263544;
   color: #afbecf;
 }

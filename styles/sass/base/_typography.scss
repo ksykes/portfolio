@@ -51,7 +51,7 @@ a {
 	text-decoration: none;
 	position: relative;
 	border-bottom: 0.1rem solid $lightBlue;
-	&:hover, &:active, &:focus, &:focus-visible, &:focus-within {
+	&:hover, &:active, &:focus {
 		color: $darkBlue;
 		border-bottom: 0.2rem solid $darkBlue;
 		transition: all 0.25s ease-in;
@@ -100,7 +100,7 @@ ul.socialMedia {
 		color: $darkBlue;
 		text-decoration: none;
 		border-bottom: none;
-		&:hover, &:active, &:focus, &:focus-visible, &:focus-within {
+		&:hover, &:active, &:focus {
 			color: $lightBlue;
 			border-bottom: none;
 			transition: all 0.25s ease-in;
