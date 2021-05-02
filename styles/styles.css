@@ -499,15 +499,15 @@ div.imageContainer, figcaption {
           justify-content: center;
 }
 
-.portfolioItem {
+figure.portfolioItem {
   position: relative;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
 
-.portfolioItem:hover .portfolioLink,
-.portfolioItem:active .portfolioLink,
-.portfolioItem:focus .portfolioLink {
+figure.portfolioItem:hover a.portfolioLink,
+figure.portfolioItem:active a.portfolioLink,
+figure.portfolioItem:focus a.portfolioLink {
   opacity: 1;
 }
 

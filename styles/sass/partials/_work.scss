@@ -51,12 +51,12 @@ div.imageContainer, figcaption {
 	justify-content: center;
 }
 
-.portfolioItem {
+figure.portfolioItem {
 	position: relative;
 	transition: 0.5s all ease-in-out;
-	&:hover .portfolioLink,
-	&:active .portfolioLink,
-	&:focus .portfolioLink {
+	&:hover a.portfolioLink,
+	&:active a.portfolioLink,
+	&:focus a.portfolioLink {
 		opacity: 1;
 	}
 }
