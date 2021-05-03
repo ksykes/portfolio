@@ -72,12 +72,18 @@ a.portfolioLink {
 	background: $lightestBlue;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	text-align: center;
 	border-bottom: none;
 	transition: 0.5s all ease-in-out;
 	&:hover, &:active, &:focus {
 		border-bottom: none;
 	}
+}
+
+a.portfolioLink span {
+	flex-basis: 100%;
 }
 
 a.liveButton {

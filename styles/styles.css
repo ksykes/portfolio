@@ -175,6 +175,13 @@ h1 {
   text-shadow: 1px 1px 2px rgba(168, 153, 110, 0.5);
 }
 
+h1::after {
+  content: '✨';
+  font-size: 3rem;
+  padding-left: 0.5rem;
+  vertical-align: middle;
+}
+
 h2 {
   font-family: "Prata", sans-serif;
   color: #afbecf;
@@ -526,9 +533,11 @@ a.portfolioLink {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
   border-bottom: none;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
@@ -536,6 +545,11 @@ a.portfolioLink {
 
 a.portfolioLink:hover, a.portfolioLink:active, a.portfolioLink:focus {
   border-bottom: none;
+}
+
+a.portfolioLink span {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 a.liveButton {
