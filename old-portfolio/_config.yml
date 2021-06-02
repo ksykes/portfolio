@@ -1,4 +1,0 @@
-name: Kait Sykes
-markdown: kramdown
-plugins:
-  - urlRelativizer.rb
