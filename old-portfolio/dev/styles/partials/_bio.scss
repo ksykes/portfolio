@@ -1,0 +1,40 @@
+#bio .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7rem 0;
+	.bioText {
+		width: 60%;
+		padding-right: 3rem;
+	}
+	.bioImage {
+		width: 40%;
+		img {
+			border-radius: 50%;
+			border: 2px solid $gold;
+			max-width: 100%;
+		}
+	}
+}
+
+.resume {
+	margin: 2.5rem 0 0 0;
+}
+
+@media (max-width: 1200px) {
+	#bio .wrapper {
+		// align-items: center;
+	}
+}
+
+@media (max-width: 940px) {
+	#bio .wrapper {
+		.bioText {
+			width: 100%;
+			padding-right: 0;
+		}
+		.bioImage {
+			display: none;
+		}
+	}
+}
